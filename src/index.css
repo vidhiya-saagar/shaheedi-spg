@@ -87,3 +87,7 @@ code {
 .mtop15 {
   margin-top: 15px;
 }
+
+p {
+  margin: 0;
+}

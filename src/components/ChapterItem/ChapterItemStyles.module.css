@@ -30,5 +30,22 @@
   bottom: -16px;
   left: calc(50% - 16px);
   font-family: 'Josefin Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 
+.ChapterNameFaded {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  text-align: left;
+  font-size: 16px;
+  letter-spacing: 0.1px;
+  opacity: 0.3;
+}
+
+.ChapterNameMain {
+  font-family: 'Gurbani Akhar Black';
+  font-size: 18px;
+}
+
+.TextContainer {
+  margin-top: 16px;
 }

@@ -11,7 +11,10 @@ const ChapterItem = props => {
             <span>{props.number}</span>
           </div>
         </div>
-        <p className="satluj">{props.name}</p>
+        <div className={ChapterItemStyles.TextContainer}>
+          <p className="gurakhar-black">{props.gurmukhiScript}</p>
+          <p className={ChapterItemStyles.ChapterNameFaded}>{props.name}</p>
+        </div>
       </div>
     </Grid>
   );
