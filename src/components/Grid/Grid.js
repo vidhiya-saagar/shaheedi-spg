@@ -17,7 +17,6 @@ const Grid = props => {
 
   const isRow = row || !column;
 
-  console.log('-------', props, justify);
   const classes =
     (!isRow ? styles.column : styles.row) +
     // Row styling

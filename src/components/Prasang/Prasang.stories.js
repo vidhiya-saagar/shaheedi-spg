@@ -9,6 +9,13 @@ export default {
 export const Chamkaur = () => (
   <Prasang
     title="The Battle of Chamkaur"
-    imgUrl="https://cdn130.picsart.com/273248779000201.jpg"
+    imgUrl="https://i.pinimg.com/originals/44/87/c8/4487c8c5f66dbad82925fb104e3fcff6.jpg"
+  />
+);
+
+export const SakaSirhind = () => (
+  <Prasang
+    title="Saka Sirhind"
+    imgUrl="https://miro.medium.com/max/1200/1*-nCsLWHAHmwJebVp8hKS0Q.jpeg"
   />
 );
