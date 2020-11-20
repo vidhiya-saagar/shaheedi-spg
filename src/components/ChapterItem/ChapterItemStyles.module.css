@@ -1,0 +1,34 @@
+.ArtworkContainer {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.Artwork {
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  width: 200px;
+  height: 200px;
+  
+}
+
+.ItemContainer {
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  background:peachpuff;
+}
+
+.Circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  background: lightgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -16px;
+  left: calc(50% - 16px);
+  font-family: 'Josefin Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+}
