@@ -13,7 +13,6 @@ svg {
 }
 
 .wrapper {
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding: 15px 20px;
   display: flex;
@@ -21,13 +20,14 @@ svg {
   justify-content: space-between;
 }
 
-h1 {
-  font-weight: 900;
+h2 {
   font-size: 20px;
   line-height: 1;
   margin: 6px 0 6px 10px;
   display: inline-block;
   vertical-align: top;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
 }
 
 button + button {

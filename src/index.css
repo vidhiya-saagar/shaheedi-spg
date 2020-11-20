@@ -1,3 +1,39 @@
+/* @font-face {
+  font-family: 'GurAkhar';
+  src: local('GURAKHAR'), url(/fonts/GURAKHAR.TTF) format('truetype');
+} */
+
+/* 
+==========================
+*/
+@font-face {
+  font-family: 'Gurbani Akhar';
+  src: local('OpenGurbaniAkhar-Regular.otf'), url(/src/fonts/OpenGurbaniAkhar/Regular/OpenGurbaniAkhar-Regular.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Gurbani Akhar Bold';
+  font-weight: 800;
+  src: local('OpenGurbaniAkhar-Bold.otf'), url(/src/fonts/OpenGurbaniAkhar/Bold/OpenGurbaniAkhar-Bold.otf);
+}
+
+@font-face {
+  font-family: 'Gurbani Akhar Black';
+  font-weight: 800;
+  src: local('OpenGurbaniAkhar-Black.otf'), url(/src/fonts/OpenGurbaniAkhar/Black/OpenGurbaniAkhar-Black.otf);
+}
+
+@font-face {
+  font-family: 'Satluj';
+  src: local('OpenSatlujUni-Regular.otf'), url(/src/fonts/OpenSatlujUni/Regular/OpenSatlujUni-Regular.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Satluj Bold';
+  font-weight: 800;
+  src: local('OpenSatlujUni-Bold.otf'), url(/src/fonts/OpenSatlujUni/Bold/OpenSatlujUni-Bold.otf) format('opentype');
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -9,5 +45,45 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    monospace !important;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 32px;
+  text-align: center;
+}
+
+.subtitle {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 1.2px;
+  text-transform: lowercase;
+}
+
+.gurakhar {
+  font-family: 'Gurbani Akhar';
+}
+
+.gurakhar-bold {
+  font-family: 'Gurbani Akhar Bold';
+}
+
+.gurakhar-black {
+  font-family: 'Gurbani Akhar Black';
+}
+
+.satluj {
+  font-family: 'Satluj';
+}
+
+.satluj-bold {
+  font-family: 'Satluj Bold';
+}
+
+.mtop15 {
+  margin-top: 15px;
 }
