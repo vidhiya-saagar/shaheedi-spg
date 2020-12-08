@@ -17,12 +17,6 @@ const Grid = props => {
 
   const isRow = row || !column;
 
-  console.log('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
-  if (customClass?.toString()) {
-    console.log('customClass', customClass);
-    console.log('JSON.stringify(customClass)', JSON.stringify(customClass));
-  }
-
   const classes =
     (!isRow ? styles.column : styles.row) +
     // Row styling

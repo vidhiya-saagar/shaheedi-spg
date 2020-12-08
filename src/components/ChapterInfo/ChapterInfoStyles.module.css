@@ -1,0 +1,19 @@
+.Container {
+  background: #202c54;
+  color: #DDE5FF;
+}
+
+.Summary {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  color: rgba(221, 229, 255, 0.5);
+  font-size: 16px;
+}
+
+.ChapterNameTranslit {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 800;
+  color: #fff8f0;
+}
