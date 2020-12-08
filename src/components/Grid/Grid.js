@@ -17,6 +17,12 @@ const Grid = props => {
 
   const isRow = row || !column;
 
+  console.log('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
+  if (customClass?.toString()) {
+    console.log('customClass', customClass);
+    console.log('JSON.stringify(customClass)', JSON.stringify(customClass));
+  }
+
   const classes =
     (!isRow ? styles.column : styles.row) +
     // Row styling
@@ -27,8 +33,8 @@ const Grid = props => {
     (!isRow && sm ? ` ${styles['sm-' + sm]}` : '') +
     (!isRow && md ? ` ${styles['md-' + md]}` : '') +
     (!isRow && lg ? ` ${styles['lg-' + lg]}` : '') +
-    // customClass stlying
-    (customClass ? ` ${styles[customClass]}` : '');
+    // Pass in CSS
+    (customClass ? ` ${customClass}` : '');
 
   return <div className={classes}>{children}</div>;
 };
