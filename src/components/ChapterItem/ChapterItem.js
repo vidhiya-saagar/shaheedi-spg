@@ -1,7 +1,7 @@
 import React from 'react';
 import ChapterItemStyles from './ChapterItemStyles.module.css';
 import Grid from '../Grid';
-import '../../index.css';
+// import '../../index.css';
 
 const ChapterItem = props => {
   return (

@@ -134,7 +134,8 @@
   text-align: center;
 }
 
-@media screen and (min-width: 40em) {
+/* Or if you are in Landscape, use the MD */
+@media screen and (min-width: 40em), screen and (orientation:landscape) {
   .md-1 {
     flex: 0 0 8.33333%;
     max-width: 8.33333%;
