@@ -2,13 +2,13 @@ import React from 'react';
 import styles from './DribbbleImageContainerStyles.module.css';
 import Grid from '../../components/Grid';
 
-const DribbbleImageContainer = () => {
+const DribbbleImageContainer = props => {
   return (
     <>
       {/* Mobile  */}
       <div className={`${styles.Container} ${styles.MobileOnly}`}>
         <img
-          src="https://i.postimg.cc/6QtsSTTJ/image.png"
+          src={props.imageUrl}
           className={`${styles.Image} ${styles.Content}`}
         />
       </div>
@@ -22,7 +22,7 @@ const DribbbleImageContainer = () => {
       >
         <Grid column={true} md={8} lg={6} customClass={styles.Container}>
           <img
-            src="https://i.postimg.cc/6QtsSTTJ/image.png"
+            src={props.imageUrl}
             className={`${styles.Image} ${styles.Content}`}
           />
         </Grid>

@@ -1,13 +1,13 @@
 import React from 'react';
-import ChapterInfo from './ChapterInfo';
+import ChapterInfoScreen from '../ChapterInfoScreen';
 
 export default {
-  title: 'Chapter/Info',
-  component: ChapterInfo,
+  title: 'Screen/ChapterInfo',
+  component: ChapterInfoScreen,
 };
 
-export const ChamkaurChapter1 = () => (
-  <ChapterInfo
+export const ChamkaurChapter32 = () => (
+  <ChapterInfoScreen
     artwork="https://www.history.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTcxNTA2MjAxMDc3NDkxMTcx/jesus-language-gettyimages-566423511.jpg"
     number={32}
     gurmukhiScript="ipCoN phwVIAW qy sUibAW ny Aw pYxw [ audY isMG b`D [ jIvn isMG"

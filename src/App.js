@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
 import ChapterScreen from './screens/ChapterScreen';
+import ChapterInfoScreen from './screens/ChapterInfoScreen';
 import Grid from './components/Grid';
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
     <div className="App">
       <div>
         <Header />
-        <ChapterScreen />
+        <ChapterInfoScreen />
       </div>
     </div>
   );
