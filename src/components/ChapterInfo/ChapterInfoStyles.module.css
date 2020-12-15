@@ -1,26 +1,25 @@
-.Container {
-  /* background: #202c54; */
-  /* color: #DDE5FF; */
-  color: black;
+/* Light Mode */
+.ChapterNumberEnglish {
+  font-family: 'Josefin Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #EB9A98;
+  text-align: left;
+}
+
+.ChapterNameTranslit, .TitleEnglish {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 800;
+  color: #543828;
+  text-align: left;
 }
 
 .Summary {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 300;
   letter-spacing: 0.3px;
-  color: rgba(221, 229, 255, 0.5);
-  font-size: 16px;
-}
-
-.ChapterNameTranslit {
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
-  font-weight: 800;
-  color: #fff8f0;
-}
-
-.ChapterNumberEnglish {
-  font-family: 'Josefin Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  color: #FF82A9;
+  color: #2D2D2F;
+  font-size: 18px;
+  text-align: justify;
+  text-align-last: end;
 }

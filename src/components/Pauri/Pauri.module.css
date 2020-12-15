@@ -1,0 +1,22 @@
+/* color: #F7EBD4; => Dark Grey */
+/* color: #2D2D2F; => Dark Grey */
+/* color: ##EB9A98; => Pink */
+
+/* Secondary */
+/* color: #543828; => Chocolate */
+/* color: #DD715A; => Orange */
+/* Accent */
+/* color: #EfCf83; => Yellow */
+
+.GurmukhiScriptTuk {
+  /* color: #EfCf83; */
+  color: #543828;
+  font-family: 'Gurbani Akhar Bold';
+  font-size: 1.4em;
+}
+
+.EnglishTranslit {
+  font-family: 'Satluj Bold';
+  color: #2D2D2F;
+  /* color: #EfCf83; */
+}

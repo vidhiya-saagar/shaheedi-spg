@@ -9,6 +9,7 @@ const ChapterInfoScreen = props => {
     <>
       <div className={Styles.Container}>
         <DribbbleImageContainer imageUrl="https://i.postimg.cc/6QtsSTTJ/image.png" />
+        <br />
         <ChapterInfo
           number={32}
           gurmukhiScript="ipCoN phwVIAW qy sUibAW ny Aw pYxw [ audY isMG b`D [ jIvn isMG"

@@ -7,8 +7,10 @@ const ChapterInfo = props => {
     <>
       <Grid alignItems="center" justify="center">
         <Grid column={true} sm={12} md={8} lg={6}>
-          <p className={Styles.ChapterNumberEnglish}>Adhyai {props.number}</p>
-          <h2 className={Styles.ChapterNameTranslit}>{props.name}</h2>
+          <p className={Styles.ChapterNumberEnglish}>Chapter {props.number}</p>
+          <h2 className={Styles.ChapterNameTranslit}>
+            {props.translationName}
+          </h2>
         </Grid>
       </Grid>
 

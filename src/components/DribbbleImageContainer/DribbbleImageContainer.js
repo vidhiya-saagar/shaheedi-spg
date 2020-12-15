@@ -12,7 +12,6 @@ const DribbbleImageContainer = props => {
           className={`${styles.Image} ${styles.Content}`}
         />
       </div>
-      <br />
 
       {/* Large Screen / Landscape */}
       <Grid
