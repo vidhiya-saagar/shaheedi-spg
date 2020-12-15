@@ -1,0 +1,35 @@
+button {
+  font-family: 'Josefin Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  line-height: 1;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  padding: 1.4em 0;
+  width: 50%;
+}
+
+.Brown {
+  background: #543828;
+  color: #F7EBD4;
+}
+
+.Blue {
+  background: #58889C;
+  color: #F7EBD4;
+}
+
+.Orange {
+  background: #DD715A;
+  color: #F7EBD4;
+}
+
+.BottomRight {
+  /* -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0); */
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 25% 0);
+  /* clip-path: polygon(10% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 50%); */
+  float: right;
+}

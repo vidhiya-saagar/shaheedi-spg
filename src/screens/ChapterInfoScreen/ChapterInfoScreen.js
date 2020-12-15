@@ -3,7 +3,7 @@ import Grid from '../../components/Grid';
 import Styles from './ChapterInfoScreenStyles.module.css';
 import DribbbleImageContainer from '../../components/DribbbleImageContainer';
 import ChapterInfo from '../../components/ChapterInfo';
-
+import CornerButtonStyles from '../../components/CornerButton/CornerButtonStyles.module.css';
 const ChapterInfoScreen = props => {
   return (
     <>
@@ -17,6 +17,17 @@ const ChapterInfoScreen = props => {
           translationName="From Behind, Hill Chiefs & Governors Arrive. The Sauga of Udhai Singh. Jeevan Singh."
           description_english="Guru Gobind Singh Ji leaves Anandpur Sahib when all of of a sudden the Mughals and hill chiefs turn on their word and attack the Singhs. When Maharaj reaches Nirmogarh they notice Bhai Ajit Singh Ji is not with them. Maharaj looks to the back of the Jatha to see Baba Ajit Singh fighting with hundreds of Mughals. On reaching Sarsa river, Maharaj sends Baba Uday Singh Ji to go and fight with mughals and to bring back Baba Ajit Singh Ji. Baba Uday Singh Ji received a boon that when you attain Shaheedi in the Battlefield, and go to Sachkhand, you will sit on right hand side of me there. Wherever you live, I will live there as well"
         />
+        <br />
+
+        <Grid alignItems="center" justify="center">
+          <Grid column={true} sm={12} md={8} lg={6}>
+            <button
+              className={`${CornerButtonStyles.Orange} ${CornerButtonStyles.BottomRight}`}
+            >
+              Explore >
+            </button>
+          </Grid>
+        </Grid>
       </div>
     </>
   );

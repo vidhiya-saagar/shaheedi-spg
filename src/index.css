@@ -91,3 +91,7 @@ code {
 p {
   margin: 0;
 }
+
+button:hover {
+  opacity: 0.9;
+}
