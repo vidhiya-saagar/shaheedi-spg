@@ -1,0 +1,19 @@
+.ChapterContainer {
+  margin: 15px 0;
+}
+.ChapterTitle {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #543828;
+  font-style: italic;
+  margin: 0;
+  /* text-align: center; */
+}
+
+.ChapterNumberEnglish {
+  font-family: 'Josefin Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #EB9A98;
+  text-align: left;
+}

@@ -3356,7 +3356,16 @@ const chhands = [
   },
 ];
 
-const chapter = null;
+const chapter = {
+  id: 1,
+  number: 31,
+  gurmukhiScript:
+    'ipCoN phwVIAW qy sUibAW ny Aw pYxw [ audY isMG b`D [ jIvnisMG',
+  name:
+    "pichho(n) pahaaReeaa(n) te soobiaa(n) ne aa painaa | udhaisi(n)gh ba'dh | jeevan si(n)gh",
+  translationName:
+    'From Behind, Hill Chiefs & Governors Arrive. The Sauga of Udhai Singh. Jeevan Singh.',
+};
 
 export const ReadChapter31 = () => (
   <>

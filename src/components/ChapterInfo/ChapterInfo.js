@@ -8,9 +8,7 @@ const ChapterInfo = props => {
       <Grid alignItems="center" justify="center">
         <Grid column={true} sm={12} md={8} lg={6}>
           <p className={Styles.ChapterNumberEnglish}>Chapter {props.number}</p>
-          <h2 className={Styles.ChapterNameTranslit}>
-            {props.translationName}
-          </h2>
+          <h2 className={Styles.TitleEnglish}>{props.translationName}</h2>
         </Grid>
       </Grid>
 
