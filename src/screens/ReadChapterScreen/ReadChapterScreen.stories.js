@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import Chhand from './Chhand';
+import React from 'react';
+import ReadChapterScreen from '../ReadChapterScreen';
 
 export default {
-  title: 'Chapter/Chhand',
-  component: Chhand,
+  title: 'Screen/ReadChapter',
+  component: ReadChapterScreen,
 };
 
+// !prettier-ignore
 const chhands = [
   {
     id: 358,
@@ -3355,8 +3356,10 @@ const chhands = [
   },
 ];
 
-export const Chapter31Chhands = () =>
-  chhands.map(chhand => {
-    return <Chhand {...chhand} />;
-  });
-// <Pauri id={pauri.id} number={pauri.number} tuks={pauri.tuks} />
+const chapter = null;
+
+export const ReadChapter31 = () => (
+  <>
+    <ReadChapterScreen chhands={chhands} chapter={chapter} />
+  </>
+);

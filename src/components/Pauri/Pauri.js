@@ -7,7 +7,7 @@ const Pauri = ({ number, tuks }) => {
     <>
       {tuks.map(tuk => {
         return (
-          <div key={tuk.id}>
+          <div key={tuk.id} className={PauriStyles.PauriContainer}>
             {/* 
             <p className="faded-text">{tuk.content_unicode}</p>
            */}
@@ -19,6 +19,11 @@ const Pauri = ({ number, tuks }) => {
               {tuk.content_transliteration_english}
               {tuks.length === tuk.line_number && <span> ||{number}||</span>}
             </p>
+            {tuk?.english_translation && (
+              <p className={PauriStyles.Translation}>
+                {tuk.english_translation}
+              </p>
+            )}
           </div>
         );
       })}

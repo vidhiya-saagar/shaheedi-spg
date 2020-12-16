@@ -1,12 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import Chhand from './Chhand';
-
-export default {
-  title: 'Chapter/Chhand',
-  component: Chhand,
-};
-
-const chhands = [
+export const chhands = [
   {
     id: 358,
     order_number: 1,
@@ -3354,9 +3346,3 @@ const chhands = [
     },
   },
 ];
-
-export const Chapter31Chhands = () =>
-  chhands.map(chhand => {
-    return <Chhand {...chhand} />;
-  });
-// <Pauri id={pauri.id} number={pauri.number} tuks={pauri.tuks} />

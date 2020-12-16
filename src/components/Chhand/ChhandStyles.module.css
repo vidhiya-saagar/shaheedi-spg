@@ -1,6 +1,18 @@
+/* Regular Colour Mode */
 .GurmukhiScriptChhandName {
-  color: red;
+  color: #EB9A98;
   font-family: 'Gurbani Akhar Black';
   font-size: 1.8em;
   margin: 0;
+}
+
+/* .GurmukhiScriptChhandNameDark {
+  color: #EB9A98;
+  font-family: 'Gurbani Akhar Black';
+  font-size: 1.8em;
+  margin: 0;
+} */
+
+.ChhandContainer {
+  margin-bottom: 15px;
 }

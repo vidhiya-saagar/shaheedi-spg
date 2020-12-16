@@ -16,7 +16,17 @@
 }
 
 .EnglishTranslit {
-  font-family: 'Satluj Bold';
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
   color: #2D2D2F;
-  /* color: #EfCf83; */
+  opacity: 0.7;
+}
+
+.Translation {
+  font-family: 'Playfair Display', serif;
+  color: #2D2D2F;
+}
+
+.PauriContainer {
+  margin-bottom: 15px;
 }
