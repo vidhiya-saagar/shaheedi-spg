@@ -1,0 +1,9 @@
+.Flow {
+  flex-flow: row;
+}
+
+@media screen and (min-width: 40em), screen and (orientation:landscape) {
+  .Flow {
+    flex-flow: row wrap;
+  }  
+}

@@ -1,21 +1,51 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Grid from '../../components/Grid';
 import Styles from './ChapterInfoScreenStyles.module.css';
 import DribbbleImageContainer from '../../components/DribbbleImageContainer';
 import ChapterInfo from '../../components/ChapterInfo';
 import CornerButtonStyles from '../../components/CornerButton/CornerButtonStyles.module.css';
+import { useParams } from 'react-router-dom';
+import { fetchGet } from '../../helper/fetchHelper';
+
 const ChapterInfoScreen = props => {
+  const { id } = useParams();
+
+  const [chapter, setChapter] = useState({
+    number: 1,
+    title_gs: '',
+    title_translation: '',
+    title_transliteration_english: '',
+    description_english: '',
+  });
+  const [kathas, setKathas] = useState(null);
+
+  useEffect(() => {
+    const fetchChapter = async chapterId => {
+      const res = await fetchGet(`/chapters/${chapterId}`);
+      console.log('res', res);
+      setChapter(res.chapter);
+    };
+
+    const fetchKathaForChapter = async chapterId => {
+      const res = await fetchGet(`/chapters/${chapterId}/kathas`);
+      console.log('res', res);
+      setKathas(res.kathas);
+    };
+
+    fetchChapter(id);
+    fetchKathaForChapter(id);
+  }, []);
   return (
     <>
       <div className={Styles.Container}>
-        <DribbbleImageContainer imageUrl="https://i.postimg.cc/6QtsSTTJ/image.png" />
+        <DribbbleImageContainer imageUrl={chapter.artwork_url} />
         <br />
         <ChapterInfo
-          number={32}
-          gurmukhiScript="ipCoN phwVIAW qy sUibAW ny Aw pYxw [ audY isMG b`D [ jIvn isMG"
-          name="pichho(n) pahaaReeaa(n) te soobiaa(n) ne aa painaa | udhai si(n)gh ba'dh | jeevan si(n)gh"
-          translationName="From Behind, Hill Chiefs & Governors Arrive. The Sauga of Udhai Singh. Jeevan Singh."
-          description_english="Guru Gobind Singh Ji leaves Anandpur Sahib when all of of a sudden the Mughals and hill chiefs turn on their word and attack the Singhs. When Maharaj reaches Nirmogarh they notice Bhai Ajit Singh Ji is not with them. Maharaj looks to the back of the Jatha to see Baba Ajit Singh fighting with hundreds of Mughals. On reaching Sarsa river, Maharaj sends Baba Uday Singh Ji to go and fight with mughals and to bring back Baba Ajit Singh Ji. Baba Uday Singh Ji received a boon that when you attain Shaheedi in the Battlefield, and go to Sachkhand, you will sit on right hand side of me there. Wherever you live, I will live there as well"
+          number={chapter.number}
+          gurmukhiScript={chapter.title_gs}
+          transliteration={chapter.content_transliteration_english}
+          translation={chapter.title_translation}
+          summary={chapter.description_english}
         />
         <br />
 

@@ -22,7 +22,8 @@
   width: 32px;
   height: 32px;
   border-radius: 100%;
-  background: lightgreen;
+  background: #EFCf83;
+  color: #2D2D2F;
   display: flex;
   justify-content: center;
   align-items: center;
