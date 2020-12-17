@@ -7,14 +7,17 @@
 .Artwork {
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
-  width: 200px;
-  height: 200px;
-  
+  /* max-width: 200px; */
+  /* height: 200px; */
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .ItemContainer {
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
+  margin: 10px;
   /* background:peachpuff; */
 }
 
@@ -23,7 +26,7 @@
   height: 32px;
   border-radius: 100%;
   background: #EFCf83;
-  color: #2D2D2F;
+  color: #543828;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,20 +36,31 @@
   font-family: 'Josefin Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+.ChapterNameMain {
+  font-family: 'Gurbani Akhar Black';
+  font-size: 18px;
+  /* color: #2D2D2F; */
+  color: #543828;
+}
+
 .ChapterNameFaded {
   font-family: 'Playfair Display', serif;
   font-style: italic;
   text-align: left;
   font-size: 16px;
   letter-spacing: 0.1px;
+  color: #2D2D2F;
   opacity: 0.3;
-}
-
-.ChapterNameMain {
-  font-family: 'Gurbani Akhar Black';
-  font-size: 18px;
 }
 
 .TextContainer {
   margin-top: 16px;
+}
+
+
+@media screen and (min-width: 64em) {
+  .ArtworkContainer {
+    height: 320px;
+    position: relative;
+  }
 }

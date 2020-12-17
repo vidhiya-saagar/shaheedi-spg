@@ -9,16 +9,14 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <div>
-          <Switch>
-            <Route exact path="/chapters">
-              <ChapterIndexScreen />
-            </Route>
-            <Route exact path="/chapters/:id">
-              <ChapterInfoScreen />
-            </Route>
-          </Switch>
-        </div>
+        <Switch>
+          <Route exact path="/chapters">
+            <ChapterIndexScreen />
+          </Route>
+          <Route exact path="/chapters/:id">
+            <ChapterInfoScreen />
+          </Route>
+        </Switch>
       </div>
     </Router>
   );

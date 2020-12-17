@@ -1,9 +1,19 @@
+.FlowContainer {
+  overflow-x: scroll;
+}
+
 .Flow {
   flex-flow: row;
+  justify-content: flex-start;
 }
 
 @media screen and (min-width: 40em), screen and (orientation:landscape) {
   .Flow {
     flex-flow: row wrap;
+    justify-content: center;
   }  
+
+  .FlowContainer {
+    overflow-x: initial;
+  }
 }
