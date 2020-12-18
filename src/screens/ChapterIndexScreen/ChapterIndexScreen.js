@@ -17,28 +17,30 @@ const ChapterIndexScreen = () => {
   }, []);
 
   return (
-    <Grid
-      alignItems="center"
-      justify="center"
-      customClass={ChapterListStyles.FlowContainer}
-    >
-      <Grid column={true} sm={12} md={12} lg={10}>
-        <Grid
-          alignItems="baseline"
-          justify="flex-start"
-          customClass={ChapterListStyles.Flow}
-        >
-          <h3>Rut 6 - Chapters</h3>
-        </Grid>
-        <Grid
-          alignItems="baseline"
-          justify="flex-start"
-          customClass={ChapterListStyles.Flow}
-        >
-          <ChapterList chapters={chamkaurChapters} />
+    <>
+      <Grid alignItems="center" justify="center">
+        <Grid column={true} sm={12} md={12} lg={10}>
+          <h3 className={Styles.PageTitle}>Rut 6 - Chapters</h3>
         </Grid>
       </Grid>
-    </Grid>
+
+      {/* ChapterLists (X-Scroll on Mobile) */}
+      <Grid
+        alignItems="center"
+        justify="center"
+        customClass={ChapterListStyles.FlowContainer}
+      >
+        <Grid column={true} sm={12} md={12} lg={10}>
+          <Grid
+            alignItems="baseline"
+            justify="flex-start"
+            customClass={ChapterListStyles.Flow}
+          >
+            <ChapterList chapters={chamkaurChapters} />
+          </Grid>
+        </Grid>
+      </Grid>
+    </>
   );
 };
 
