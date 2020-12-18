@@ -19,7 +19,12 @@ const ChapterList = ({ chapters }) => {
           >
             {chapters?.map(chapter => {
               return (
-                <Grid column={true} md={4} lg={3}>
+                <Grid
+                  column={true}
+                  md={4}
+                  lg={3}
+                  customClass={Styles.ChapterItemContainer}
+                >
                   <ChapterItem
                     id={chapter.id}
                     artwork={chapter.artwork_url}

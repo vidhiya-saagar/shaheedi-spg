@@ -4,6 +4,12 @@
   position: relative;
 }
 
+.TextContainer {
+  margin-top: 16px;
+  width: 200px;
+}
+
+
 .Artwork {
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
@@ -53,15 +59,13 @@
   opacity: 0.3;
 }
 
-.TextContainer {
-  margin-top: 16px;
-  width: 100%;
-}
-
-
 @media screen and (min-width: 64em) {
   .ArtworkContainer {
     height: 320px;
     position: relative;
+  }
+  
+  .TextContainer {
+    width: 250px;
   }
 }

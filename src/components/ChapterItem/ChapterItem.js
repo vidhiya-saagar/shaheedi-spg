@@ -6,10 +6,10 @@ import '../../index.css';
 
 const ChapterItem = props => {
   return (
-    <Link to={`/chapters/${props.id}`}>
-      {props.signature_unicode}
+    <Grid alignItems="center" justify="center">
+      <Link to={`/chapters/${props.id}`}>
+        {props.signature_unicode}
 
-      <div className={ChapterItemStyles.ItemContainer}>
         <div className={ChapterItemStyles.ArtworkContainer}>
           <img
             src={
@@ -30,8 +30,8 @@ const ChapterItem = props => {
             {props.translation || 'No Name Yet...'}
           </p>
         </div>
-      </div>
-    </Link>
+      </Link>
+    </Grid>
   );
 };
 
