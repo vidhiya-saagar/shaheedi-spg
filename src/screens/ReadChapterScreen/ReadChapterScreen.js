@@ -58,18 +58,26 @@ const ReadChapterScreen = () => {
   return (
     <>
       <Grid column={true} sm={12} md={12} lg={12}>
-        <Grid alignItems="center" justify="center">
-          <Grid column={true} sm={12} md={8} lg={6}>
-            <Grid alignItems="center" justify="flex-start">
-              <div className={Styles.ChapterContainer}>
-                <p className={Styles.ChapterNumberEnglish}>{chapter.number}</p>
-                <h3 className={Styles.ChapterTitle}>
-                  {chapter.title_translation}
-                </h3>
-              </div>
-            </Grid>
+        <Grid alignItems="center" justify="space-between">
+          {/* SPLIT SCREEN - LEFT SIDE */}
+          <Grid
+            column={true}
+            sm={12}
+            md={6}
+            lg={6}
+            customClass={Styles.RemoveDesktopPadding}
+          >
+            <div className={Styles.ImageContainer}>
+              <img src={chapter.artwork_url} className={Styles.DesktopImage} />
+            </div>
+          </Grid>
 
-            <Grid alignItems="center" justify="flex-start">
+          <Grid column={true} sm={12} md={6} lg={5}>
+            <Grid
+              alignItems="center"
+              justify="flex-center"
+              customClass={Styles.DesktopContainer}
+            >
               {chhands?.map(chhand => {
                 return <Chhand {...chhand} />;
               })}

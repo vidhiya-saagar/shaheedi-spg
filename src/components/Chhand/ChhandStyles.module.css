@@ -18,3 +18,12 @@
 .ChhandContainer {
   margin-bottom: 15px;
 }
+
+
+@media screen and (min-width: 64em) {
+  .ChhandContainer:first-child {
+    margin-top: 4em;
+  }
+  
+  /*  Also do the Same for last Pauri */
+}
