@@ -96,3 +96,8 @@ p {
 button:hover {
   opacity: 0.9;
 }
+
+a{
+  text-decoration: none;
+  display: contents;
+}

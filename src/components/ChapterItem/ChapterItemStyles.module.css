@@ -59,13 +59,12 @@
   opacity: 0.3;
 }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 40em) {
   .ArtworkContainer {
     height: 320px;
+    width: 90%;
+    max-width: 320px;
     position: relative;
   }
   
-  .TextContainer {
-    width: 250px;
-  }
 }
