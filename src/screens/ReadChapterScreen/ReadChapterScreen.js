@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Chhand from '../../components/Chhand';
 import Styles from './ReadChapterScreen.module.css';
 import Grid from '../../components/Grid';
 import KathaPlayer from '../../components/KathaPlayer';
+import { useParams } from 'react-router-dom';
+import { fetchGet } from '../../helper/fetchHelper';
 
 const chapter31AudioTracks = [
   {
@@ -22,7 +24,37 @@ const chapter31AudioTracks = [
   },
 ];
 
-const ReadChapterScreen = ({ chhands, chapter }) => {
+const ReadChapterScreen = () => {
+  const { id } = useParams();
+
+  const [chapter, setChapter] = useState({
+    number: 1,
+    title_gs: '',
+    title_translation: '',
+    title_transliteration: '',
+    description_english: '',
+  });
+  const [chhands, setChhands] = useState([]);
+  const [kathas, setKathas] = useState([]);
+
+  useEffect(() => {
+    const fetchChapter = async chapterId => {
+      const res = await fetchGet(`/chapters/${chapterId}/tuks`);
+      console.log('res', res);
+      setChapter(res.chapter);
+      setChhands(res.chhands);
+    };
+
+    const fetchKathaForChapter = async chapterId => {
+      const res = await fetchGet(`/chapters/${chapterId}/kathas`);
+      console.log('res', res);
+      setKathas(res.kathas);
+    };
+
+    fetchChapter(id);
+    fetchKathaForChapter(id);
+  }, []);
+
   return (
     <>
       <Grid column={true} sm={12} md={12} lg={12}>
@@ -32,7 +64,7 @@ const ReadChapterScreen = ({ chhands, chapter }) => {
               <div className={Styles.ChapterContainer}>
                 <p className={Styles.ChapterNumberEnglish}>{chapter.number}</p>
                 <h3 className={Styles.ChapterTitle}>
-                  {chapter.translationName}
+                  {chapter.title_translation}
                 </h3>
               </div>
             </Grid>
@@ -45,7 +77,7 @@ const ReadChapterScreen = ({ chhands, chapter }) => {
           </Grid>
         </Grid>
       </Grid>
-      <KathaPlayer audioTracks={chapter31AudioTracks} />
+      <KathaPlayer audioTracks={kathas} />
     </>
   );
 };

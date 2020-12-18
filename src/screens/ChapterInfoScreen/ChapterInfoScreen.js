@@ -6,6 +6,7 @@ import ChapterInfo from '../../components/ChapterInfo';
 import CornerButtonStyles from '../../components/CornerButton/CornerButtonStyles.module.css';
 import { useParams } from 'react-router-dom';
 import { fetchGet } from '../../helper/fetchHelper';
+import { Link } from 'react-router-dom';
 
 const ChapterInfoScreen = props => {
   const { id } = useParams();
@@ -26,14 +27,7 @@ const ChapterInfoScreen = props => {
       setChapter(res.chapter);
     };
 
-    const fetchKathaForChapter = async chapterId => {
-      const res = await fetchGet(`/chapters/${chapterId}/kathas`);
-      console.log('res', res);
-      setKathas(res.kathas);
-    };
-
     fetchChapter(id);
-    fetchKathaForChapter(id);
   }, []);
   return (
     <>
@@ -51,11 +45,13 @@ const ChapterInfoScreen = props => {
 
         <Grid alignItems="center" justify="center">
           <Grid column={true} sm={12} md={8} lg={6}>
-            <button
-              className={`${CornerButtonStyles.Orange} ${CornerButtonStyles.BottomRight}`}
-            >
-              Explore >
-            </button>
+            <Link to={`/chapters/${id}/read`}>
+              <button
+                className={`${CornerButtonStyles.Orange} ${CornerButtonStyles.BottomRight}`}
+              >
+                Explore >
+              </button>
+            </Link>
           </Grid>
         </Grid>
       </div>
