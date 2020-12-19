@@ -1,0 +1,124 @@
+.Skewed {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  z-index: 0;
+  transform: skewY(6deg);
+  transform-origin: top right;
+  background-image: url("https://i.postimg.cc/7hpw40vw/Screen-Shot-2020-12-19-at-2-38-05-PM.png");
+  background-size: cover;
+  background-position-x: center;
+}
+
+.SkewedContainer {
+  height: 150px;
+}
+
+.SpgLogo {
+  width: 100%;
+  height: auto;
+}
+
+.MainTitle, .SubTitle {
+  font-family: 'Playfair Display', serif;
+  text-align: right;
+  font-weight: 400;
+  color: #543828;
+  font-size: 18px;
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.dark-mode .MainTitle {
+  color: #DD715A;
+}
+
+.dark-mode .SubTitle {
+  color: #DD715A;
+}
+
+.MainTitle h1 {
+  font-weight: 800;
+  font-size: 2.5em;
+  font-style: italic;
+  /* Brown Colour BELOW */
+  /* color: #543828; */
+  color: #EB9A98;
+}
+
+.ContentImage {
+  width: 100%;
+  object-fit: cover;
+}
+
+.Sec {
+  margin-top: 30px;
+  color: #2D2D2F;
+}
+
+.SecText {
+  text-align: left;
+}
+
+.SecText h3 {
+  font-family: 'Josefin Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  font-size: 24px;;
+}
+
+.SecText p {
+  font-family: 'Playfair Display', serif;
+  text-align: justify;
+  font-weight: 400;
+}
+
+.SecText p + p {
+  margin-top: 30px;
+}
+
+/* Small Tablet */
+@media screen and (min-width: 25em) {
+  .MainTitle h1 {
+    font-size: 3.2em;
+  }
+
+  .Skewed {
+    height: 200px;
+  }
+
+  .SkewedContainer {
+    height: 200px;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 40em) {
+  .Skewed {
+    height: 275px;
+  }
+
+  .SkewedContainer {
+    height: 275px;
+  }
+
+  .MainTitle h1 {
+    font-size: 5em;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 64em) {
+  .Skewed {
+    height: 350px;
+  }
+
+  .SkewedContainer {
+    height: 350px;
+  }
+}

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Styles from './ChapterIndexScreenStyle.module.css';
+import Grid from '../../components/Grid';
 import ChapterListStyles from '../../components/ChapterList/ChapterList.module.css';
 import { fetchGet } from '../../helper/fetchHelper';
 import ChapterList from '../../components/ChapterList';
-import Grid from '../../components/Grid';
 
 const ChapterIndexScreen = () => {
   const [chamkaurChapters, setChamkaurChapters] = useState(null);
