@@ -2,10 +2,16 @@ import React, { useEffect, useState } from 'react';
 import Styles from './LandingScreenStyle.module.css';
 import Grid from '../../components/Grid';
 
+const isDarkMode = true;
+
 const LandingPage = () => {
   return (
     <>
-      <Grid alignItems="center" justify="center">
+      <Grid
+        alignItems="center"
+        justify="center"
+        customClass={isDarkMode ? `${Styles.DarkMode}` : ''}
+      >
         {/* Maybe Header */}
         <Grid column={true} sm={12} md={12} lg={12}>
           <section className={Styles.SkewedContainer}>

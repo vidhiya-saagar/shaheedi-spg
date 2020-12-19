@@ -34,12 +34,8 @@
   -ms-user-select: none; /* IE10+/Edge */
   user-select: none; /* Standard */
 }
-
-.dark-mode .MainTitle {
-  color: #DD715A;
-}
-
-.dark-mode .SubTitle {
+/* Dark Mode  */
+.DarkMode .MainTitle, .DarkMode .SubTitle {
   color: #DD715A;
 }
 
@@ -55,12 +51,22 @@
 .ContentImage {
   width: 100%;
   object-fit: cover;
+  border-radius: 2em 2em 0em 0;
+}
+.DarkMode .ContentImage {
+  border: 2px solid #EFCf83;
 }
 
 .Sec {
   margin-top: 30px;
   color: #2D2D2F;
 }
+/* Dark Mode  */
+.DarkMode .Sec {
+  margin-top: 30px;
+  color: #F7EBD4;
+}
+
 
 .SecText {
   text-align: left;
