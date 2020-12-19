@@ -16,20 +16,21 @@ const ChapterIndexScreen = () => {
     fetchChamkaurChapters();
   }, []);
 
+  const isDarkMode = true;
+
   return (
     <>
-      <Grid alignItems="center" justify="center">
-        <Grid column={true} sm={12} md={12} lg={10}>
-          <h3 className={Styles.PageTitle}>Rut 6 - Chapters</h3>
-        </Grid>
-      </Grid>
-
-      {/* ChapterLists (X-Scroll on Mobile) */}
       <Grid
         alignItems="center"
         justify="center"
-        customClass={ChapterListStyles.FlowContainer}
+        customClass={isDarkMode ? `${Styles.DarkMode}` : ''}
       >
+        <Grid column={true} sm={12} md={12} lg={10}>
+          <h3 className={Styles.PageTitle}>Rut 6 - Chapters</h3>
+        </Grid>
+
+        {/* ChapterLists (X-Scroll on Mobile) */}
+
         <Grid column={true} sm={12} md={12} lg={10}>
           <Grid
             alignItems="baseline"

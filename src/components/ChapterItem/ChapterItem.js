@@ -4,9 +4,15 @@ import { Link } from 'react-router-dom';
 import Grid from '../Grid';
 import '../../index.css';
 
+const isDarkMode = true;
+
 const ChapterItem = props => {
   return (
-    <Grid alignItems="center" justify="center">
+    <Grid
+      alignItems="center"
+      justify="center"
+      customClass={isDarkMode ? `${ChapterItemStyles.DarkMode}` : ''}
+    >
       <Link to={`/chapters/${props.id}`}>
         {props.signature_unicode}
 

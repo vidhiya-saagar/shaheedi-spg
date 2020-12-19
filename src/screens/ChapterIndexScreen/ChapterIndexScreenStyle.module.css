@@ -6,6 +6,10 @@
   color: #2D2D2F;
 }
 
+.DarkMode .PageTitle {
+  color: #F7EBD4;
+}
+
 @media screen and (min-width: 40em) {
   .PageTitle {
     font-size: 32px;
