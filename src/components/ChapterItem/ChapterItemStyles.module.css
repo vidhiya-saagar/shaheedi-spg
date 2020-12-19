@@ -18,6 +18,12 @@
   object-fit: cover;
 }
 
+/* DarkMode */
+.DarkMode .Artwork {
+  border: 1.5px solid #EFCf83;
+  border-bottom-width: 2px;
+}
+
 .ItemContainer {
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
