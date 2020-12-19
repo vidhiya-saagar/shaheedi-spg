@@ -6,12 +6,17 @@
   text-align: left;
 }
 
+
 .ChapterNameTranslit, .TitleEnglish {
   font-family: 'Playfair Display', serif;
   font-style: italic;
   font-weight: 800;
   color: #543828;
   text-align: left;
+}
+/* Dark Mode */
+.DarkMode .TitleEnglish {
+  color: #F7EBD4;
 }
 
 .Summary {

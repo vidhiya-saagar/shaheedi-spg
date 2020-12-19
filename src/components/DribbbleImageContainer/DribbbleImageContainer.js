@@ -1,15 +1,22 @@
-import React from 'react';
-import styles from './DribbbleImageContainerStyles.module.css';
+import React, { useEffect, useState } from 'react';
+import Styles from './DribbbleImageContainerStyles.module.css';
 import Grid from '../../components/Grid';
 
 const DribbbleImageContainer = props => {
+  const isDarkMode = true;
+  const [darkModeClassName, setDarkModeClassName] = useState(Styles.DarkMode);
+
   return (
     <>
       {/* Mobile  */}
-      <div className={`${styles.Container} ${styles.MobileOnly}`}>
+      <div
+        className={`${Styles.Container} ${Styles.MobileOnly} ${
+          isDarkMode ? `${Styles.DarkMode}` : ''
+        }`}
+      >
         <img
           src={props.imageUrl}
-          className={`${styles.Image} ${styles.Content}`}
+          className={`${Styles.Image} ${Styles.Content}`}
         />
       </div>
 
@@ -17,12 +24,19 @@ const DribbbleImageContainer = props => {
       <Grid
         alignItems="center"
         justify="center"
-        customClass={styles.NonMobileOnly}
+        customClass={Styles.NonMobileOnly}
       >
-        <Grid column={true} md={8} lg={6} customClass={styles.Container}>
+        <Grid
+          column={true}
+          md={8}
+          lg={6}
+          customClass={`${Styles.Container} ${
+            isDarkMode ? `${Styles.DarkMode}` : ''
+          }`}
+        >
           <img
             src={props.imageUrl}
-            className={`${styles.Image} ${styles.Content}`}
+            className={`${Styles.Image} ${Styles.Content}`}
           />
         </Grid>
       </Grid>
