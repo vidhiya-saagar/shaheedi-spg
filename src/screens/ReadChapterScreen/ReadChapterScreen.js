@@ -5,7 +5,7 @@ import Grid from '../../components/Grid';
 import KathaPlayer from '../../components/KathaPlayer';
 import { useParams } from 'react-router-dom';
 import { fetchGet } from '../../helper/fetchHelper';
-
+import { Link } from 'react-router-dom';
 const chapter31AudioTracks = [
   {
     name: 'Sooraj Parkash Katha - Rut 06 Adhyai 31 - Anandpur Chorna',
@@ -89,8 +89,8 @@ const ReadChapterScreen = () => {
           <Grid column={true} sm={12} md={5} lg={5}>
             <Grid
               alignItems="center"
-              justify="flex-center"
-              customClass={Styles.DesktopContainer}
+              justify="flex-start"
+              customClass={Styles.ChhandContainer}
             >
               {chhands?.map(chhand => {
                 return <Chhand {...chhand} />;

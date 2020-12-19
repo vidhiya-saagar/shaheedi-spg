@@ -31,6 +31,10 @@
   display: none;
 }
 
+.ChhandContainer {
+  padding: 0 0.9375rem;
+}
+
 @media screen and (min-width: 40em) {
 
   .RemoveDesktopPadding {
@@ -38,7 +42,7 @@
     position: relative;
   }
 
-  .DesktopContainer {
+  .ChhandContainer {
     height: 100vh;
     overflow-y: scroll;
     text-align: left;

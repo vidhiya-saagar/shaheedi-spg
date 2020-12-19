@@ -15,13 +15,14 @@
   margin: 0;
 } */
 
-.ChhandContainer {
+.ChhandDiv {
   margin-bottom: 15px;
+  text-align: left;
 }
 
 
 @media screen and (min-width: 40em) {
-  .ChhandContainer:first-child {
+  .ChhandDiv:first-child {
     margin-top: 4em;
   }
   

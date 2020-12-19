@@ -8,7 +8,7 @@ import Pauri from '../../components/Pauri';
 
 const Chhand = props => {
   return (
-    <div key={props.id} className={ChhandStyles.ChhandContainer}>
+    <div key={props.id} className={ChhandStyles.ChhandDiv}>
       <h4 className={ChhandStyles.GurmukhiScriptChhandName}>
         {props.chhand_type.chhand_name_gs}
       </h4>

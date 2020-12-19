@@ -32,8 +32,7 @@
 }
 
 @media screen and (min-width: 64em) {
-  /*  Also do the Same for last Pauri */
-  .PauriContainer:last-child {
-    margin-bottom: 4em;
+  .PauriContainer:last-of-type {
+    margin-bottom: 5em;
   }
 }
