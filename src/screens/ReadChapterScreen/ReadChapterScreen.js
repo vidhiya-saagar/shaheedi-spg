@@ -69,10 +69,24 @@ const ReadChapterScreen = () => {
           >
             <div className={Styles.ImageContainer}>
               <img src={chapter.artwork_url} className={Styles.DesktopImage} />
+
+              <div className={Styles.DesktopTextContainer}>
+                <p className={Styles.ChapterNumberEnglish}>{chapter.number}</p>
+                <h3 className={Styles.ChapterTitle}>
+                  {chapter.title_translation}
+                </h3>
+              </div>
+            </div>
+
+            <div className={Styles.MobileTextContainer}>
+              <p className={Styles.ChapterNumberEnglish}>{chapter.number}</p>
+              <h3 className={Styles.ChapterTitle}>
+                {chapter.title_translation}
+              </h3>
             </div>
           </Grid>
 
-          <Grid column={true} sm={12} md={6} lg={5}>
+          <Grid column={true} sm={12} md={5} lg={5}>
             <Grid
               alignItems="center"
               justify="flex-center"

@@ -1,5 +1,5 @@
 import * as fetch from 'node-fetch';
-const baseUrl = 'http://localhost:1469/api/v1';
+const baseUrl = process.env.REACT_APP_BASE_URL;
 
 export const fetchGet = async (url = '', data = {}) => {
   console.log('GET', url);
