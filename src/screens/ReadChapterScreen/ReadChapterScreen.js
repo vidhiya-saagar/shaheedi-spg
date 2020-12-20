@@ -92,10 +92,6 @@ const ReadChapterScreen = () => {
               justify="flex-start"
               customClass={Styles.ChhandContainer}
             >
-              <div>
-                <Link to={`/chapters`}>Chapters</Link>
-              </div>
-
               {chhands?.map(chhand => {
                 return <Chhand {...chhand} />;
               })}
