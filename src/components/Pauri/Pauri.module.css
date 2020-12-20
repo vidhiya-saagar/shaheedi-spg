@@ -15,12 +15,24 @@
   font-size: 1.4em;
 }
 
+/* Dark Mode */
+.DarkMode .GurmukhiScriptTuk {
+  color: #F7EBD4;
+}
+
 .EnglishTranslit {
   font-family: 'Playfair Display', serif;
   font-style: italic;
   color: #2D2D2F;
   opacity: 0.7;
 }
+
+/* Dark Mode */
+.DarkMode .EnglishTranslit {
+  color: #F7EBD4;
+  opacity: 0.7;
+}
+
 
 .Translation {
   font-family: 'Playfair Display', serif;

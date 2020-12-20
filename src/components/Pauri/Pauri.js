@@ -2,12 +2,18 @@ import React from 'react';
 import Grid from '../../components/Grid';
 import PauriStyles from './Pauri.module.css';
 
+const isDarkMode = true;
 const Pauri = ({ number, tuks }) => {
   return (
     <>
       {tuks.map(tuk => {
         return (
-          <div key={tuk.id} className={PauriStyles.PauriContainer}>
+          <div
+            key={tuk.id}
+            className={`${PauriStyles.PauriContainer} ${
+              isDarkMode ? `${PauriStyles.DarkMode}` : ''
+            }`}
+          >
             {/* 
             <p className="faded-text">{tuk.content_unicode}</p>
            */}
