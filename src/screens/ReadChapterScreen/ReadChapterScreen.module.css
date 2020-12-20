@@ -13,6 +13,11 @@
   margin: 2em 0;
 }
 
+/* Dark Mode */
+.DarkMode .MobileTextContainer {
+  color: #EB9A98;
+}
+
 .ChapterNumberEnglish {
   font-family: 'Josefin Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 400;

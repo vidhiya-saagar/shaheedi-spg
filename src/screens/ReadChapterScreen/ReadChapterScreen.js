@@ -20,6 +20,8 @@ const ReadChapterScreen = () => {
   const [chhands, setChhands] = useState([]);
   const [kathas, setKathas] = useState([]);
 
+  const isDarkMode = true;
+
   useEffect(() => {
     const fetchChapter = async chapterId => {
       const res = await fetchGet(`/chapters/${chapterId}/tuks`);
@@ -40,7 +42,13 @@ const ReadChapterScreen = () => {
 
   return (
     <>
-      <Grid column={true} sm={12} md={12} lg={12}>
+      <Grid
+        column={true}
+        sm={12}
+        md={12}
+        lg={12}
+        customClass={isDarkMode ? `${Styles.DarkMode}` : ''}
+      >
         <Grid alignItems="center" justify="space-between">
           {/* SPLIT SCREEN - LEFT SIDE */}
           <Grid
