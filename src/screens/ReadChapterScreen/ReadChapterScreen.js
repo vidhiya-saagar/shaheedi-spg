@@ -6,23 +6,6 @@ import KathaPlayer from '../../components/KathaPlayer';
 import { useParams } from 'react-router-dom';
 import { fetchGet } from '../../helper/fetchHelper';
 import { Link } from 'react-router-dom';
-const chapter31AudioTracks = [
-  {
-    name: 'Sooraj Parkash Katha - Rut 06 Adhyai 31 - Anandpur Chorna',
-    singer: 'Giani Harbhajan Singh Dhudikey',
-    cover: 'https://i.ytimg.com/vi/JTIqcyoxtJQ/sddefault.jpg',
-    musicSrc:
-      'https://shaheedi-spg.s3.amazonaws.com/Giani.Harbhajan.Singh.(Dhudikey)--254.Sooraj.Prakash.Katha.-.Rut.06.Adhyai.31.-.Anandpur.Chorna.mp3',
-  },
-  {
-    name: '(BoC P.1) - Mughals surround Anandpur Sahib',
-    singer: 'Bhai Sukha Singh (UK)',
-    cover:
-      'https://shaheedi-spg.s3.amazonaws.com/GianiArtwork/Web+Files/1024-Giani-Sukha-Singh.png',
-    musicSrc:
-      'https://www.sikhroots.com/audio/Lectures/Bhai%20Sukha%20Singh%20(UK)/Collection%201/Battle%20of%20Chamkaur%2001.mp3',
-  },
-];
 
 const ReadChapterScreen = () => {
   const { id } = useParams();
