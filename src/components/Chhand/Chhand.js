@@ -6,9 +6,15 @@ import Pauri from '../../components/Pauri';
 // Pauris
 // Tuks
 
+const isDarkMode = true;
 const Chhand = props => {
   return (
-    <div key={props.id} className={ChhandStyles.ChhandContainer}>
+    <div
+      key={props.id}
+      className={`${ChhandStyles.ChhandDiv} ${
+        isDarkMode ? `${ChhandStyles.DarkMode}` : ''
+      }`}
+    >
       <h4 className={ChhandStyles.GurmukhiScriptChhandName}>
         {props.chhand_type.chhand_name_gs}
       </h4>

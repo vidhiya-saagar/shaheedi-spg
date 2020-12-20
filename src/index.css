@@ -41,8 +41,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
   background: #F7EBD4;
 }
+
+.App.DarkModeApp {
+  background: #2D2D2F;
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -100,4 +108,11 @@ button:hover {
 a{
   text-decoration: none;
   display: contents;
+}
+
+.unhighlight {
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 }

@@ -45,11 +45,18 @@ const ChapterInfoScreen = props => {
 
         <Grid alignItems="center" justify="center">
           <Grid column={true} sm={12} md={8} lg={6}>
+            <Link to={`/chapters`}>
+              <button
+                className={`${CornerButtonStyles.Orange} ${CornerButtonStyles.BottomLeft}`}
+              >
+                &#60; Chapters
+              </button>
+            </Link>
             <Link to={`/chapters/${id}/read`}>
               <button
                 className={`${CornerButtonStyles.Orange} ${CornerButtonStyles.BottomRight}`}
               >
-                Explore >
+                Explore &#62;
               </button>
             </Link>
           </Grid>

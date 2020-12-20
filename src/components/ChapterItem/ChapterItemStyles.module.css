@@ -5,26 +5,29 @@
 }
 
 .TextContainer {
-  margin-top: 16px;
-  width: 200px;
+  margin: 20px 15px 0;
+  width: 100%;
 }
 
 
 .Artwork {
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
-  /* max-width: 200px; */
-  /* height: 200px; */
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+/* DarkMode */
+.DarkMode .Artwork {
+  border: 1.5px solid #EFCf83;
+  border-bottom-width: 2px;
 }
 
 .ItemContainer {
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
   margin: 10px;
-  /* background:peachpuff; */
 }
 
 .Circle {
@@ -45,18 +48,28 @@
 .ChapterNameMain {
   font-family: 'Gurbani Akhar Black';
   font-size: 18px;
-  /* color: #2D2D2F; */
   color: #543828;
+}
+
+/* DarkMode */
+.DarkMode .ChapterNameMain {
+  color: #F7EBD4;
 }
 
 .ChapterNameFaded {
   font-family: 'Playfair Display', serif;
   font-style: italic;
-  text-align: left;
+  /* text-align: left; */
   font-size: 16px;
   letter-spacing: 0.1px;
   color: #2D2D2F;
   opacity: 0.3;
+}
+
+/* DarkMode */
+.DarkMode .ChapterNameFaded {
+  color: #F7EBD4;
+  opacity: 0.7;
 }
 
 @media screen and (min-width: 40em) {

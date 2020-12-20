@@ -40,6 +40,12 @@
   /* For some reason, needs to be set to SOMETHING */
 }
 
+/* Dark Mode */
+.DarkMode .Image {
+  border: 1.5px solid #EFCf83;
+  border-top: none;
+}
+
 .MobileOnly {
   display: none;
 }

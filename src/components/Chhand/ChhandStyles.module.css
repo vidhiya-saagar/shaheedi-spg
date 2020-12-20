@@ -8,20 +8,19 @@
   margin: 0;
 }
 
-/* .GurmukhiScriptChhandNameDark {
-  color: #EB9A98;
-  font-family: 'Gurbani Akhar Black';
-  font-size: 1.8em;
-  margin: 0;
-} */
 
-.ChhandContainer {
+.DarkMode .GurmukhiScriptChhandName {
+  color: #DD715A;
+}
+
+.ChhandDiv {
   margin-bottom: 15px;
+  text-align: left;
 }
 
 
 @media screen and (min-width: 40em) {
-  .ChhandContainer:first-child {
+  .ChhandDiv:first-child {
     margin-top: 4em;
   }
   
