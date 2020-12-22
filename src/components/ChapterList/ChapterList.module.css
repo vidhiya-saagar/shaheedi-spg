@@ -3,6 +3,7 @@
 }
 
 .Flow {
+  overflow-x: scroll;
   flex-flow: row;
   justify-content: flex-start;
 }
@@ -20,9 +21,9 @@
   .Flow {
     flex-flow: row wrap;
     justify-content: flex-start;
+    overflow-x: initial;
   }  
 
   .FlowContainer {
-    overflow-x: initial;
   }
 }
