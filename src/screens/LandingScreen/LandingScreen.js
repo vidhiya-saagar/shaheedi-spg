@@ -179,6 +179,25 @@ const LandingPage = () => {
             </Grid>
           </Grid>
         </Grid>
+
+        {/* Footer Disclaimer */}
+        <Grid
+          column={true}
+          sm={12}
+          md={10}
+          lg={10}
+          customClass={Styles.LastSec}
+        >
+          <p className={Styles.Disclaimer}>
+            <strong>Disclaimer</strong> - this story is brought to you through a
+            translation of Maha Kavi Santokh Singh. It should be known that
+            further study of the granth is encouraged, but with the guidance of
+            someone who has studied the granth. The grace and understanding that
+            comes with a teacher are irreplaceable. This knowledge is best
+            obtained with a figure in place that can explain and answer any
+            questions you have.{' '}
+          </p>
+        </Grid>
       </Grid>
     </>
   );

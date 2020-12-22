@@ -16,7 +16,6 @@ const themeContext = (state, action) => {
 // Get their Theme Preference from
 const fetchThemePreference = dispatch => async () => {};
 
-/* eslint-disable no-debugger */
 const toggleTheme = dispatch => theme => {
   const oppositeTheme = theme === 'DARK' ? 'LIGHT' : 'DARK';
   window.localStorage.setItem('currentTheme', oppositeTheme);

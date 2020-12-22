@@ -84,6 +84,24 @@
 .LastSec {
   margin: 30px 0;
 }
+
+.Disclaimer {
+  font-family: 'Josefin Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  font-size: 12; 
+  opacity: 0.3;
+  text-transform: uppercase;
+  text-align: justify;
+  text-align-last: center;
+  color: #2D2D2F;
+  font-size: 8px;
+}
+
+/* Dark Mode  */
+.DarkMode .Disclaimer{
+  color: #F7EBD4;
+}
+
 /* Dark Mode  */
 .DarkMode .Sec {
   margin-top: 30px;
