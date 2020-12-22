@@ -52,17 +52,20 @@ const ChapterIndexScreen = () => {
             </Grid>
           </Grid>
 
-          <Grid alignItems="center" justify="center">
-            <Grid column={true} sm={12} md={8} lg={6}>
-              <Link to={`/`}>
-                <button
-                  className={`${CornerButtonStyles.Orange} ${CornerButtonStyles.BottomLeft}`}
-                >
-                  Home
-                </button>
-              </Link>
+          {/* Only Show Button When Chapters Have Loaded */}
+          {chamkaurChapters?.length > 0 && (
+            <Grid alignItems="center" justify="center">
+              <Grid column={true} sm={12} md={8} lg={6}>
+                <Link to={`/`}>
+                  <button
+                    className={`${CornerButtonStyles.Orange} ${CornerButtonStyles.BottomLeft}`}
+                  >
+                    Home
+                  </button>
+                </Link>
+              </Grid>
             </Grid>
-          </Grid>
+          )}
         </Grid>
       </Grid>
     </>

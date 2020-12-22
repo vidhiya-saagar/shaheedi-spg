@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Styles from './LandingScreenStyle.module.css';
 import Grid from '../../components/Grid';
-
+import ThemeSelector from '../../components/ThemeSelector';
 const isDarkMode = true;
 
 const LandingPage = () => {
@@ -128,6 +128,14 @@ const LandingPage = () => {
               </div>
             </Grid>
           </Grid>
+        </Grid>
+
+        {/* Settings */}
+        <Grid column={true} sm={12} md={10} lg={10} customClass={Styles.Sec}>
+          <div className={Styles.SecText}>
+            <h3>Application Preferences</h3>
+          </div>
+          <ThemeSelector theme="DARK" />
         </Grid>
       </Grid>
     </>
