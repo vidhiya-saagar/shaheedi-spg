@@ -2,10 +2,10 @@ import createDataContext from './createDataContext';
 
 const themeContext = (state, action) => {
   switch (action.type) {
-    case 'UPDATE_THEME_PREFERENCE':
+    case 'TOGGLE_THEME':
       return {
         ...state,
-        currentTheme: action.payload.theme,
+        currentTheme: action.payload.oppositeTheme,
       };
 
     default:
@@ -16,10 +16,12 @@ const themeContext = (state, action) => {
 // Get their Theme Preference from
 const fetchThemePreference = dispatch => async () => {};
 
-const updateThemePreference = dispatch => theme => {
+/* eslint-disable no-debugger */
+const toggleTheme = dispatch => theme => {
+  const oppositeTheme = theme === 'DARK' ? 'LIGHT' : 'DARK';
   dispatch({
-    type: 'UPDATE_THEME_PREFERENCE',
-    payload: { theme },
+    type: 'TOGGLE_THEME',
+    payload: { oppositeTheme },
   });
 };
 
@@ -27,7 +29,7 @@ export const { Provider, Context } = createDataContext(
   themeContext,
   {
     fetchThemePreference,
-    updateThemePreference,
+    toggleTheme,
   },
   {
     currentTheme: 'DARK',

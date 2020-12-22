@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Styles from './ThemeSelectorStyles.module.css';
 import { Icon, InlineIcon } from '@iconify/react';
 import sunIcon from '@iconify-icons/feather/sun';
 import moonIcon from '@iconify-icons/feather/moon';
+import { Context as ThemeContext } from '../../context/ThemeContext';
 
 const ThemeSelector = props => {
+  const { toggleTheme } = useContext(ThemeContext);
   return (
     <>
       <label className={Styles.NoOverflow}>
@@ -12,6 +14,7 @@ const ThemeSelector = props => {
           className={Styles.ToggleCheckbox}
           type="checkbox"
           checked={props.theme === 'DARK' ? true : false}
+          onClick={() => toggleTheme(props.theme)}
         ></input>
         <div className={Styles.ToggleSlot}>
           <div className={Styles.SunIcon_Wrapper}>
