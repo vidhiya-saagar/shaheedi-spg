@@ -62,7 +62,7 @@ const ReadChapterScreen = () => {
           >
             <div className={Styles.ImageContainer}>
               <button className={Styles.DesktopBackButton}>
-                <Link to={`/chapters`}>Back</Link>
+                <Link to={`/chapters/${id}`}>Back</Link>
               </button>
               <img src={chapter.artwork_url} className={Styles.DesktopImage} />
 
@@ -76,7 +76,7 @@ const ReadChapterScreen = () => {
 
             <div className={Styles.MobileTextContainer}>
               <div className={Styles.MobileBackButton}>
-                <Link to={`/chapters`}>Back</Link>
+                <Link to={`/chapters/${id}`}>Back</Link>
               </div>
               <p className={Styles.ChapterNumberEnglish}>{chapter.number}</p>
               <h3 className={Styles.ChapterTitle}>
