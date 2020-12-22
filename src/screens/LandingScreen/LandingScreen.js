@@ -3,6 +3,8 @@ import Styles from './LandingScreenStyle.module.css';
 import Grid from '../../components/Grid';
 import ThemeSelector from '../../components/ThemeSelector';
 import { Context as ThemeContext } from '../../context/ThemeContext';
+import { Link } from 'react-router-dom';
+import CornerButtonStyles from '../../components/CornerButton/CornerButtonStyles.module.css';
 
 const LandingPage = () => {
   const { state: themeState } = useContext(ThemeContext);
@@ -138,6 +140,17 @@ const LandingPage = () => {
             <h3>Application Preferences</h3>
           </div>
           <ThemeSelector theme={themeState.currentTheme} />
+        </Grid>
+
+        {/* Next Button */}
+        <Grid column={true} sm={12} md={10} lg={10}>
+          <Link to={`/chapters`}>
+            <button
+              className={`${CornerButtonStyles.Orange} ${CornerButtonStyles.BottomRight}`}
+            >
+              Chamkaur
+            </button>
+          </Link>
         </Grid>
       </Grid>
     </>

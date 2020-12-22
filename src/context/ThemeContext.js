@@ -19,6 +19,7 @@ const fetchThemePreference = dispatch => async () => {};
 /* eslint-disable no-debugger */
 const toggleTheme = dispatch => theme => {
   const oppositeTheme = theme === 'DARK' ? 'LIGHT' : 'DARK';
+  window.localStorage.setItem('currentTheme', oppositeTheme);
   dispatch({
     type: 'TOGGLE_THEME',
     payload: { oppositeTheme },
@@ -32,6 +33,6 @@ export const { Provider, Context } = createDataContext(
     toggleTheme,
   },
   {
-    currentTheme: 'DARK',
+    currentTheme: window.localStorage.getItem('currentTheme') || 'DARK',
   },
 );

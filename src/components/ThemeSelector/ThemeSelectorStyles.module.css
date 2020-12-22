@@ -16,15 +16,16 @@
   width: 20em;
   border: 5px solid #e4e7ec;
   border-radius: 10em;
-  background-color: #F7EBD4;
+  background-color:rgba(255,255,255, 0.4);
   box-shadow: 0px 10px 25px #e4e7ec;
   transition: background-color 250ms;
-  scale: 25%;
+  zoom: 0.25;
+  -moz-transform: scale(0.25);
 }
 
 .ToggleCheckbox:checked ~ .ToggleSlot {
-  /* background-color: #374151; */
-  background-color: #2F2F2D;
+  background-color: #374151;
+  /* background-color: #2F2F2D; */
 }
 
 .ToggleButton {
