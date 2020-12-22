@@ -6,10 +6,12 @@ import ChapterIndexScreen from './screens/ChapterIndexScreen';
 import ReadChapterScreen from './screens/ReadChapterScreen';
 import LandingScreen from './screens/LandingScreen';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+const isDarkMode = true;
 
 function App() {
   return (
     <Router>
+      {isDarkMode && <style>{`html { background: #2D2D2F; }`}</style>}
       <div className="App DarkModeApp">
         <Switch>
           <Route exact path="/">
