@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Grid from '../../components/Grid';
 import ChhandStyles from './ChhandStyles.module.css';
 import Pauri from '../../components/Pauri';
-// ChhandType
-// Pauris
-// Tuks
+import { Context as ThemeContext } from '../../context/ThemeContext';
 
-const isDarkMode = true;
 const Chhand = props => {
+  const { state: themeState } = useContext(ThemeContext);
+  const isDarkMode = themeState.currentTheme === 'DARK';
   return (
+    // ChhandType
+    // Pauris
+    // Tuks
     <div
       key={props.id}
       className={`${ChhandStyles.ChhandDiv} ${

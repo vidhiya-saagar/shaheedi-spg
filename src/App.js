@@ -1,16 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import { useContext } from 'react';
 import Header from './components/Header';
 import ChapterInfoScreen from './screens/ChapterInfoScreen';
 import ChapterIndexScreen from './screens/ChapterIndexScreen';
 import ReadChapterScreen from './screens/ReadChapterScreen';
 import LandingScreen from './screens/LandingScreen';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Context as ThemeContext } from './context/ThemeContext';
 
 function App() {
+  const { state: themeState } = useContext(ThemeContext);
+
   return (
     <Router>
-      <div className="App DarkModeApp">
+      {themeState.currentTheme === 'DARK' && (
+        <style>{`html { background: #2D2D2F; }`}</style>
+      )}
+      <div className="App">
         <Switch>
           <Route exact path="/">
             <LandingScreen />

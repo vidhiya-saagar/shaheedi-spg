@@ -3,12 +3,17 @@
 }
 
 .Flow {
+  overflow-x: scroll;
   flex-flow: row;
   justify-content: flex-start;
 }
 
 .ChapterItemContainer {
   margin: 0 10px;
+}
+
+.ButtonContainer {
+  margin: 30px 0;
 }
 
 
@@ -20,9 +25,9 @@
   .Flow {
     flex-flow: row wrap;
     justify-content: flex-start;
+    overflow-x: initial;
   }  
 
   .FlowContainer {
-    overflow-x: initial;
   }
 }

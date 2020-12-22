@@ -43,7 +43,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.App {
+html {
   background: #F7EBD4;
 }
 
@@ -115,4 +115,8 @@ a{
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE10+/Edge */
   user-select: none; /* Standard */
+}
+
+img {
+  box-sizing: border-box;
 }

@@ -27,16 +27,13 @@ button {
 }
 
 .BottomRight {
-  /* clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%, 0 100%); */
-    clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 0 0);
+  clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 0 0);
   float: right;
-  /* text-align: right; */
   padding-right: 1em;
 }
 
 .BottomLeft {
   clip-path: polygon(10% 0, 100% 0, 100% 100%, 10% 100%, 0 50%);
   float: left;
-  /* text-align: left; */
   padding-left: 1em;
 }
