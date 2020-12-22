@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import Styles from './DribbbleImageContainerStyles.module.css';
 import Grid from '../../components/Grid';
+import { Context as ThemeContext } from '../../context/ThemeContext';
 
 const DribbbleImageContainer = props => {
-  const isDarkMode = true;
+  const { state: themeState } = useContext(ThemeContext);
+  const isDarkMode = themeState.currentTheme === 'DARK';
   const [darkModeClassName, setDarkModeClassName] = useState(Styles.DarkMode);
 
   return (

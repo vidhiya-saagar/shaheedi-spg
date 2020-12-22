@@ -30,6 +30,6 @@ export const { Provider, Context } = createDataContext(
     updateThemePreference,
   },
   {
-    currentTheme: 'LIGHT',
+    currentTheme: 'DARK',
   },
 );

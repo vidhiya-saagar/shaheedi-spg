@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Styles from './ChapterInfoStyles.module.css';
 import Grid from '../../components/Grid';
-
-const isDarkMode = true;
+import { Context as ThemeContext } from '../../context/ThemeContext';
 
 const ChapterInfo = props => {
+  const { state: themeState } = useContext(ThemeContext);
+  const isDarkMode = themeState.currentTheme === 'DARK';
+
   return (
     <>
       <Grid

@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Grid from '../../components/Grid';
 import PauriStyles from './Pauri.module.css';
+import { Context as ThemeContext } from '../../context/ThemeContext';
 
-const isDarkMode = true;
 const Pauri = ({ number, tuks }) => {
+  const { state: themeState } = useContext(ThemeContext);
+  const isDarkMode = themeState.currentTheme === 'DARK';
+
   return (
     <>
       {tuks.map(tuk => {

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import Styles from './ChapterIndexScreenStyle.module.css';
 import Grid from '../../components/Grid';
 import ChapterListStyles from '../../components/ChapterList/ChapterList.module.css';
@@ -7,9 +7,13 @@ import ChapterList from '../../components/ChapterList';
 import { Link } from 'react-router-dom';
 import CornerButton from '../../components/CornerButton';
 import CornerButtonStyles from '../../components/CornerButton/CornerButtonStyles.module.css';
+import { Context as ThemeContext } from '../../context/ThemeContext';
 
 const ChapterIndexScreen = () => {
+  const { state: themeState } = useContext(ThemeContext);
+  const isDarkMode = themeState.currentTheme === 'DARK';
   const [chamkaurChapters, setChamkaurChapters] = useState(null);
+
   useEffect(() => {
     const fetchChamkaurChapters = async () => {
       const res = await fetchGet('/chamkaur');
@@ -18,8 +22,6 @@ const ChapterIndexScreen = () => {
     };
     fetchChamkaurChapters();
   }, []);
-
-  const isDarkMode = true;
 
   return (
     <>

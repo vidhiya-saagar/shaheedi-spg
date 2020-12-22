@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import Styles from './LandingScreenStyle.module.css';
 import Grid from '../../components/Grid';
 import ThemeSelector from '../../components/ThemeSelector';
-const isDarkMode = true;
+import { Context as ThemeContext } from '../../context/ThemeContext';
 
 const LandingPage = () => {
+  const { state: themeState } = useContext(ThemeContext);
+  const isDarkMode = themeState.currentTheme === 'DARK';
   return (
     <>
       <Grid
@@ -135,7 +137,7 @@ const LandingPage = () => {
           <div className={Styles.SecText}>
             <h3>Application Preferences</h3>
           </div>
-          <ThemeSelector theme="DARK" />
+          <ThemeSelector theme={themeState.currentTheme} />
         </Grid>
       </Grid>
     </>

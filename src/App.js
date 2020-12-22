@@ -10,14 +10,14 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Context as ThemeContext } from './context/ThemeContext';
 
 function App() {
-  const { state } = useContext(ThemeContext);
+  const { state: themeState } = useContext(ThemeContext);
 
   return (
     <Router>
-      {state.currentTheme === 'DARK' && (
+      {themeState.currentTheme === 'DARK' && (
         <style>{`html { background: #2D2D2F; }`}</style>
       )}
-      <div className="App DarkModeApp">
+      <div className="App">
         <Switch>
           <Route exact path="/">
             <LandingScreen />

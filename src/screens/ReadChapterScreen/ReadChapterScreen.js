@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import Chhand from '../../components/Chhand';
 import Styles from './ReadChapterScreen.module.css';
 import Grid from '../../components/Grid';
@@ -6,6 +6,7 @@ import KathaPlayer from '../../components/KathaPlayer';
 import { useParams } from 'react-router-dom';
 import { fetchGet } from '../../helper/fetchHelper';
 import { Link } from 'react-router-dom';
+import { Context as ThemeContext } from '../../context/ThemeContext';
 
 const ReadChapterScreen = () => {
   const { id } = useParams();
@@ -20,7 +21,8 @@ const ReadChapterScreen = () => {
   const [chhands, setChhands] = useState([]);
   const [kathas, setKathas] = useState([]);
 
-  const isDarkMode = true;
+  const { state: themeState } = useContext(ThemeContext);
+  const isDarkMode = themeState.currentTheme === 'DARK';
 
   useEffect(() => {
     const fetchChapter = async chapterId => {

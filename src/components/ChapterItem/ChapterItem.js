@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import ChapterItemStyles from './ChapterItemStyles.module.css';
 import { Link } from 'react-router-dom';
 import Grid from '../Grid';
 import '../../index.css';
-
-const isDarkMode = true;
+import { Context as ThemeContext } from '../../context/ThemeContext';
 
 const ChapterItem = props => {
+  const { state: themeState } = useContext(ThemeContext);
+  const isDarkMode = themeState.currentTheme === 'DARK';
+
   return (
     <Grid
       alignItems="center"
