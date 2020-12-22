@@ -43,11 +43,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.App {
+.App, html {
   background: #F7EBD4;
 }
 
-.App.DarkModeApp {
+.App.DarkModeApp, html {
   background: #2D2D2F;
 }
 
