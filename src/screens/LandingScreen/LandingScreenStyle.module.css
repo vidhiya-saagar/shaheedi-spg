@@ -61,6 +61,10 @@
   margin-top: 30px;
   color: #2D2D2F;
 }
+
+.LastSec {
+  margin: 30px 0;
+}
 /* Dark Mode  */
 .DarkMode .Sec {
   margin-top: 30px;

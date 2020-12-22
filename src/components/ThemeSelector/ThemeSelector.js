@@ -9,23 +9,25 @@ const ThemeSelector = props => {
   const { toggleTheme } = useContext(ThemeContext);
   return (
     <>
-      <label className={Styles.NoOverflow}>
-        <input
-          className={Styles.ToggleCheckbox}
-          type="checkbox"
-          checked={props.theme === 'DARK' ? true : false}
-          onClick={() => toggleTheme(props.theme)}
-        ></input>
-        <div className={Styles.ToggleSlot}>
-          <div className={Styles.SunIcon_Wrapper}>
-            <Icon icon={sunIcon} height="6em" width="6em" color="#EFCF83" />
+      <div className={Styles.ToggleContainer}>
+        <label className={Styles.NoOverflow}>
+          <input
+            className={Styles.ToggleCheckbox}
+            type="checkbox"
+            checked={props.theme === 'DARK' ? true : false}
+            onClick={() => toggleTheme(props.theme)}
+          ></input>
+          <div className={Styles.ToggleSlot}>
+            <div className={Styles.SunIcon_Wrapper}>
+              <Icon icon={sunIcon} height="6em" width="6em" color="#EFCF83" />
+            </div>
+            <div className={Styles.ToggleButton}></div>
+            <div className={Styles.Moon_Icon_Wrapper}>
+              <Icon icon={sunIcon} height="6em" width="6em" color="#F7EBD4" />
+            </div>
           </div>
-          <div className={Styles.ToggleButton}></div>
-          <div className={Styles.Moon_Icon_Wrapper}>
-            <Icon icon={sunIcon} height="6em" width="6em" color="#F7EBD4" />
-          </div>
-        </div>
-      </label>
+        </label>
+      </div>
     </>
   );
 };

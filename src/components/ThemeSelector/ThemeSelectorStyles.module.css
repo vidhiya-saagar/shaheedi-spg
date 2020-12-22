@@ -1,3 +1,11 @@
+.ToggleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  overflow: hidden;
+}
+
 .NoOverflow {
   overflow: hidden;
 }

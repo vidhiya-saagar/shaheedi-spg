@@ -134,16 +134,8 @@ const LandingPage = () => {
           </Grid>
         </Grid>
 
-        {/* Settings */}
-        <Grid column={true} sm={12} md={10} lg={10} customClass={Styles.Sec}>
-          <div className={Styles.SecText}>
-            <h3>Application Preferences</h3>
-          </div>
-          <ThemeSelector theme={themeState.currentTheme} />
-        </Grid>
-
         {/* Next Button */}
-        <Grid column={true} sm={12} md={10} lg={10}>
+        <Grid column={true} sm={12} md={10} lg={10} customClass={Styles.Sec}>
           <Link to={`/chapters`}>
             <button
               className={`${CornerButtonStyles.Orange} ${CornerButtonStyles.BottomRight}`}
@@ -151,6 +143,22 @@ const LandingPage = () => {
               Chamkaur
             </button>
           </Link>
+        </Grid>
+
+        {/* Preferances */}
+        <Grid
+          column={true}
+          sm={12}
+          md={10}
+          lg={10}
+          customClass={Styles.LastSec}
+        >
+          <Grid alignItems="flex-start" justify="center">
+            {/* Theme Preference */}
+            <Grid column={true} sm={12} md={12} lg={12}>
+              <ThemeSelector theme={themeState.currentTheme} />
+            </Grid>
+          </Grid>
         </Grid>
       </Grid>
     </>
