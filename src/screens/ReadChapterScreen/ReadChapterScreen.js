@@ -61,6 +61,9 @@ const ReadChapterScreen = () => {
             customClass={Styles.RemoveDesktopPadding}
           >
             <div className={Styles.ImageContainer}>
+              <button className={Styles.DesktopBackButton}>
+                <Link to={`/chapters`}>Back</Link>
+              </button>
               <img src={chapter.artwork_url} className={Styles.DesktopImage} />
 
               <div className={Styles.DesktopTextContainer}>
@@ -72,6 +75,9 @@ const ReadChapterScreen = () => {
             </div>
 
             <div className={Styles.MobileTextContainer}>
+              <div className={Styles.MobileBackButton}>
+                <Link to={`/chapters`}>Back</Link>
+              </div>
               <p className={Styles.ChapterNumberEnglish}>{chapter.number}</p>
               <h3 className={Styles.ChapterTitle}>
                 {chapter.title_translation}

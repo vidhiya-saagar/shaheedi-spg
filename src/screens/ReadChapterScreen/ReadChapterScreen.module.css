@@ -3,14 +3,32 @@
 }
 .ChapterTitle {
   margin-top: 5px;
+  margin-bottom: 0;
   font-family: 'Josefin Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
   text-align: left;
 }
 
+.MobileBackButton {
+  float: left;
+  outline: none;
+  border: none;
+  background: none;
+  margin: 0 0 15px 0;  
+}
+
+.MobileBackButton a {
+  font-family: 'Josefin Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #DD715A;
+}
+
 .MobileTextContainer {
   color: #DD715A;
   margin: 2em 0;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
 /* Dark Mode */
@@ -26,6 +44,23 @@
 
 .ImageContainer {
   display: none;
+}
+
+.DesktopBackButton {
+  position: absolute;
+  padding: 0.9375rem;
+  outline: none;
+  border: none;
+  background: #000;
+  z-index: 1;
+  width: 100px;
+  clip-path: polygon(75% 0, 100% 100%, 0 100%, 0 0);
+}
+
+.DesktopBackButton a {
+  color: #F7EBD4;
+  font-family: 'Josefin Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
 }
 
 .ChhandContainer {

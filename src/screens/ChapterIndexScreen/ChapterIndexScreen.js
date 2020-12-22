@@ -56,8 +56,12 @@ const ChapterIndexScreen = () => {
 
           {/* Only Show Button When Chapters Have Loaded */}
           {chamkaurChapters?.length > 0 && (
-            <Grid alignItems="center" justify="center">
-              <Grid column={true} sm={12} md={8} lg={6}>
+            <Grid
+              alignItems="center"
+              justify="center"
+              customClass={ChapterListStyles.ButtonContainer}
+            >
+              <Grid column={true} sm={12} md={12} lg={10}>
                 <Link to={`/`}>
                   <button
                     className={`${CornerButtonStyles.Orange} ${CornerButtonStyles.BottomLeft}`}
