@@ -29,7 +29,7 @@ const LandingPage = () => {
             {/* Logo */}
             <Grid column={true} sm={4} md={4} lg={4}>
               <img
-                src="https://shaheedi-spg.s3.amazonaws.com/StaticImages/SPGLogo_Web.webp"
+                src="https://shaheedi-spg.s3.amazonaws.com/StaticImages/SPGLogo_Comp.png"
                 className={Styles.SpgLogo}
               />
             </Grid>
@@ -53,60 +53,93 @@ const LandingPage = () => {
         {/* Into to SPG */}
         <Grid column={true} sm={12} md={10} lg={10} customClass={Styles.Sec}>
           <Grid alignItems="flex-start" justify="center">
-            {/* Image */}
-            <Grid column={true} sm={12} md={6} lg={6}>
-              <img
-                src="https://shaheedi-spg.s3.amazonaws.com/StaticImages/KaviJiHiResFinal_Web.webp"
-                className={Styles.ContentImageNoBorder}
-              />
-              <p className={Styles.SubText}>
-                Kavi Santokh Singh - Crafted by <i>Jatinder Singh Durhailay</i>
-              </p>
-            </Grid>
-            {/* Text */}
-            <Grid column={true} sm={12} md={6} lg={6}>
-              <div className={Styles.SecText}>
-                <h3>The Granth</h3>
-                <p>
-                  Paramount to the foundation of Sikhi is the saakhis/stories of
-                  the Gurus and their Sikhs which play an integral role of
-                  inspiration. A dominant source of such inspiration comes
-                  through the historical text called Sri Suraj Prakash Granth (
-                  <i>or Sri Gurpartap Suraj Granth</i>) which is read and
-                  contemplated upon amongst the diaspora today. Written by Kavi
-                  Raaj Bhai Santokh Singh, Sri Suraj Prakash serves as an
-                  important work of literature filled with the rich history and
-                  philosophy of the 10 Guru Sahibs strung together through
-                  numerous volumes of poetic beauty.
-                </p>
-                <p>
-                  The work is primarily written in Braj Bhasha, a western Hindi
-                  language in the times preceding the 19th century. SPG is
-                  structured in a way that it relates to the rays of the Sun
-                  itself; as a way of reflecting the Guru’s glory. SPG ranges to
-                  over 1600 angs and consists of 51,820 verses written in the
-                  form of [mention poetic devices] dohras, chands, etc. The
-                  literary work is broken down into 14 jildhs (volumes), 6 ruts,
-                  and 2 directions in resemblance to the rising and setting of
-                  the sun.
-                </p>
+            <Grid column={true} sm={12} md={12} lg={12}>
+              {/* First Row */}
+              <Grid
+                alignItems="flex-start"
+                justify="center"
+                customClass={`${Styles.Sec} ${Styles.MobileReverse}`}
+              >
+                {/* First Image  */}
+                <Grid column={true} sm={12} md={6} lg={6}>
+                  <img
+                    src="https://shaheedi-spg.s3.amazonaws.com/StaticImages/KaviJiWriting_LosslessComp.jpg"
+                    className={Styles.ContentImage}
+                  />
+                </Grid>
 
-                <p>
-                  SPG remains a vital source of reference to the lives of the
-                  Gurus and is the most commonly used historical source for
-                  discourse amongst the Sikh diaspora. Among the 5 takhts,
-                  discourse on Suraj Prakash is done every day where a reader
-                  (Paathi) would read aloud lines from the text and discourse
-                  would be done from the Kathavaachik.
-                </p>
-              </div>
+                {/* Text */}
+                <Grid column={true} sm={12} md={6} lg={6}>
+                  <div className={Styles.SecText}>
+                    <h3>The Granth</h3>
+                    <p>
+                      Paramount to the foundation of Sikhi is the
+                      saakhis/stories of the Gurus and their Sikhs which play an
+                      integral role of inspiration. A dominant source of such
+                      inspiration comes through the historical text called Sri
+                      Suraj Prakash Granth (<i>or Sri Gurpartap Suraj Granth</i>
+                      ) which is read and contemplated upon amongst the diaspora
+                      today. Written by Kavi Raaj Bhai Santokh Singh, Sri Suraj
+                      Prakash serves as an important work of literature filled
+                      with the rich history and philosophy of the 10 Guru Sahibs
+                      strung together through numerous volumes of poetic beauty.
+                    </p>
+                  </div>
+                </Grid>
+              </Grid>
+              {/* Second Row */}
+
+              <Grid
+                alignItems="flex-start"
+                justify="center"
+                customClass={`${Styles.Sec} ${Styles.MobileReverse}`}
+              >
+                <Grid column={true} sm={12} md={6} lg={6}>
+                  <img
+                    src="https://i.postimg.cc/28H9Qc6N/kavihiresnoborder-optimized.png"
+                    className={Styles.ContentImage}
+                  />
+                  <p className={Styles.SubText}>
+                    Kavi Santokh Singh - Minature painting by{' '}
+                    <i>Jatinder Singh Durhailay</i>
+                  </p>
+                </Grid>
+                <Grid column={true} sm={12} md={6} lg={6}>
+                  <div className={Styles.SecText}>
+                    <p>
+                      The work is primarily written in Braj Bhasha, a Western
+                      Hindi language in the times preceding the 19th century.
+                      SPG is structured in a way that it relates to the rays of
+                      the Sun itself; as a way of reflecting the Guru’s glory.
+                      SPG ranges to over 1600 angs and consists of 51,820 verses
+                      written in the form of [mention poetic devices] dohras,
+                      chands, etc. The literary work is broken down into 14
+                      jildhs (volumes), 6 ruts, and 2 directions in resemblance
+                      to the rising and setting of the sun.
+                    </p>
+
+                    <p>
+                      SPG remains a vital source of reference to the lives of
+                      the Gurus and is the most commonly used historical source
+                      for discourse amongst the Sikh diaspora. Among the 5
+                      takhts, discourse on Suraj Prakash is done every day where
+                      a reader (Paathi) would read aloud lines from the text and
+                      discourse would be done from the Kathavaachik.
+                    </p>
+                  </div>
+                </Grid>
+              </Grid>
             </Grid>
           </Grid>
         </Grid>
 
         {/* Section 1 - About Kavi Ji */}
         <Grid column={true} sm={12} md={10} lg={10} customClass={Styles.Sec}>
-          <Grid alignItems="flex-start" justify="center">
+          <Grid
+            alignItems="flex-start"
+            justify="center"
+            customClass={Styles.Reverse}
+          >
             {/* Image */}
             <Grid column={true} sm={12} md={6} lg={6}>
               <img
@@ -114,7 +147,7 @@ const LandingPage = () => {
                 className={Styles.ContentImage}
               />
               <p className={Styles.SubText}>
-                Giani Sant Singh - The vidyaguru of Kavi Santokh Singh
+                Giani Sant Singh - The <i>vidyaguru</i> of Kavi Santokh Singh
               </p>
             </Grid>
             {/* Text */}
