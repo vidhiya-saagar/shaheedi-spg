@@ -48,12 +48,13 @@
   color: #EB9A98;
 }
 
-.ContentImage, .ContentImageNoBorder {
+.ContentImage {
   width: 100%;
   object-fit: cover;
   border-radius: 3px 3px 0em 0;
   outline: 0;
   box-sizing: border-box;
+  margin-top: 15px;
 }
 
 .SubText {
@@ -68,17 +69,13 @@
   color: #EFCf83;
 }
 
-/* Dark mode  */
-.DarkMode .ContentImageNoBorder {
- border: none;
-}
-.DarkMode .ContentImage {
-  border: 2px solid #EFCf83;
+.Sec {
+  margin: 1em 0;
+  color: #2D2D2F;
 }
 
-.Sec {
-  margin-top: 30px;
-  color: #2D2D2F;
+.Reverse {
+  flex-flow: column-reverse;
 }
 
 .LastSec {
@@ -131,6 +128,7 @@
 /* Small Tablet */
 @media screen and (min-width: 25em) {
   .MainTitle h1 {
+    margin: 0;
     font-size: 3.2em;
   }
 
@@ -143,13 +141,19 @@
   }
 }
 
+/* Mobile Only */
+@media screen and (max-width: 40em) {
+  .MobileReverse {
+    flex-flow: column-reverse;
+  }
+}
+
 /* Tablet */
 @media screen and (min-width: 40em) {
   
   .SecText h3 {
     margin-top: 0;
   }
-
   
   .Skewed {
     height: 275px;
@@ -162,6 +166,7 @@
   .MainTitle h1 {
     font-size: 5em;
   }
+
 }
 
 /* Desktop */
@@ -172,5 +177,9 @@
 
   .SkewedContainer {
     height: 350px;
+  }
+
+  .Reverse {
+    flex-flow: row-reverse;
   }
 }
