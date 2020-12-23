@@ -39,6 +39,7 @@
   object-position: center;
   object-fit: cover;
   width: 100%;
+  height: 1px;
   /* For some reason, needs to be set to SOMETHING */
 }
 
