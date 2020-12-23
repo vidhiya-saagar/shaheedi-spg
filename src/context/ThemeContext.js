@@ -32,6 +32,6 @@ export const { Provider, Context } = createDataContext(
     toggleTheme,
   },
   {
-    currentTheme: window.localStorage.getItem('currentTheme') || 'DARK',
+    currentTheme: window.localStorage.getItem('currentTheme') || 'LIGHT',
   },
 );

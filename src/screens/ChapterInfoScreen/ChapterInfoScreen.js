@@ -23,7 +23,6 @@ const ChapterInfoScreen = props => {
   useEffect(() => {
     const fetchChapter = async chapterId => {
       const res = await fetchGet(`/chapters/${chapterId}`);
-      console.log('res', res);
       setChapter(res.chapter);
     };
 
