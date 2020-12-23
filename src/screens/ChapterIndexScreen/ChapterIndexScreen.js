@@ -17,7 +17,6 @@ const ChapterIndexScreen = () => {
   useEffect(() => {
     const fetchChamkaurChapters = async () => {
       const res = await fetchGet('/chamkaur');
-      console.log(res);
       setChamkaurChapters(res.chapters);
     };
     fetchChamkaurChapters();

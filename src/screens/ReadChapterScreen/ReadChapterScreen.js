@@ -27,14 +27,12 @@ const ReadChapterScreen = () => {
   useEffect(() => {
     const fetchChapter = async chapterId => {
       const res = await fetchGet(`/chapters/${chapterId}/tuks`);
-      console.log('res', res);
       setChapter(res.chapter);
       setChhands(res.chhands);
     };
 
     const fetchKathaForChapter = async chapterId => {
       const res = await fetchGet(`/chapters/${chapterId}/kathas`);
-      console.log('res', res);
       setKathas(res.kathas);
     };
 

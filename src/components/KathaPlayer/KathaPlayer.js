@@ -3,6 +3,7 @@ import ReactJkMusicPlayer from 'react-jinke-music-player';
 import 'react-jinke-music-player/assets/index.css';
 import gianis from '../../lib/gianis';
 
+/* eslint-enable no-debugger */
 const formatTracks = audioTracks => {
   return audioTracks.map(t => {
     return {

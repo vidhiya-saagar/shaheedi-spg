@@ -59,6 +59,9 @@ const LandingPage = () => {
                 src="https://shaheedi-spg.s3.amazonaws.com/StaticImages/KaviJiHiResFinal_Web.webp"
                 className={Styles.ContentImageNoBorder}
               />
+              <p className={Styles.SubText}>
+                Kavi Santokh Singh - Crafted by <i>Jatinder Singh Durhailay</i>
+              </p>
             </Grid>
             {/* Text */}
             <Grid column={true} sm={12} md={6} lg={6}>
@@ -107,7 +110,7 @@ const LandingPage = () => {
             {/* Image */}
             <Grid column={true} sm={12} md={6} lg={6}>
               <img
-                src="https://shaheedi-spg.s3.amazonaws.com/StaticImages/GianiSantSingh_Web.webp"
+                src="https://shaheedi-spg.s3.amazonaws.com/StaticImages/GianiSantSingh_Caligraphy.webp"
                 className={Styles.ContentImage}
               />
               <p className={Styles.SubText}>
