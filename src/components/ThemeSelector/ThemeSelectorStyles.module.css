@@ -29,6 +29,7 @@
   transition: background-color 250ms;
   zoom: 0.25;
   -moz-transform: scale(0.25);
+  -webkit-transform:scale(0.25);
 }
 
 .ToggleCheckbox:checked ~ .ToggleSlot {
