@@ -112,10 +112,10 @@ const LandingPage = () => {
                       SPG is structured in a way that it relates to the rays of
                       the Sun itself; as a way of reflecting the Guru’s glory.
                       SPG ranges to over 1600 angs and consists of 51,820 verses
-                      written in the form of [mention poetic devices] dohras,
-                      chands, etc. The literary work is broken down into 14
-                      jildhs (volumes), 6 ruts, and 2 directions in resemblance
-                      to the rising and setting of the sun.
+                      of various, sophisticated poetic devices. The literary
+                      work is broken down into 14 <i>jildhs</i> (volumes), 6
+                      <i>ruts</i>, and 2 directions in resemblance to the rising
+                      and setting of the sun.
                     </p>
 
                     <p>
@@ -143,7 +143,7 @@ const LandingPage = () => {
             {/* Image */}
             <Grid column={true} sm={12} md={6} lg={6}>
               <img
-                src="https://shaheedi-spg.s3.amazonaws.com/StaticImages/GianiSantSingh_Caligraphy.webp"
+                src="https://shaheedi-spg.s3.amazonaws.com/StaticImages/GianiSantSinghCaligraph_Comp.jpg"
                 className={Styles.ContentImage}
               />
               <p className={Styles.SubText}>
