@@ -24,6 +24,7 @@ const KathaPlayer = props => {
     showDestroy: false,
     showPlayMode: false,
     autoPlay: false,
+    loadAudioErrorPlayNext: false,
     onAudioError(errMsg, currentPlayId, audioLists, audioInfo) {
       console.error(
         'Audio Error: ',
