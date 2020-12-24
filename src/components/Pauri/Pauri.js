@@ -28,10 +28,8 @@ const Pauri = ({ number, tuks }) => {
               {tuk.content_transliteration_english}
               {tuks.length === tuk.line_number && <span> ||{number}||</span>}
             </p>
-            {tuk?.english_translation && (
-              <p className={PauriStyles.Translation}>
-                {tuk.english_translation}
-              </p>
+            {tuk?.translation && (
+              <p className={PauriStyles.Translation}>{tuk.translation}</p>
             )}
           </div>
         );

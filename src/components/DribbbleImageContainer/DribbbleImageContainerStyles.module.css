@@ -43,6 +43,10 @@
   /* For some reason, needs to be set to SOMETHING */
 }
 
+.StartTop {
+  object-position: top;
+}
+
 /* Dark Mode */
 .DarkMode .Image {
   border: 1.5px solid #EFCf83;

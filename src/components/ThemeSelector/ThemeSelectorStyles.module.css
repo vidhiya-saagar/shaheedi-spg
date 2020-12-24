@@ -27,9 +27,9 @@
   background-color:rgba(255,255,255, 0.4);
   box-shadow: 0px 10px 25px #e4e7ec;
   transition: background-color 250ms;
-  zoom: 0.25;
-  -moz-transform: scale(0.25);
-  -webkit-transform:scale(0.25);
+  zoom: 0.33;
+  -moz-transform: scale(0.33);
+  -webkit-transform:scale(0.33);
 }
 
 .ToggleCheckbox:checked ~ .ToggleSlot {
@@ -82,4 +82,13 @@
 .ToggleCheckbox:checked ~ .ToggleSlot .Moon_Icon_Wrapper {
   opacity: 1;
   transform: translate(12em, 2em) rotate(-15deg);
+}
+
+
+@media screen and (min-width: 40em) {
+  .ToggleSlot {
+    zoom: 0.25;
+    -moz-transform: scale(0.25);
+    -webkit-transform:scale(0.25);  
+  }
 }

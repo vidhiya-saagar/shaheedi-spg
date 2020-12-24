@@ -62,7 +62,12 @@ const ReadChapterScreen = () => {
               <button className={Styles.DesktopBackButton}>
                 <Link to={`/chapters/${id}`}>Back</Link>
               </button>
-              <img src={chapter.artwork_url} className={Styles.DesktopImage} />
+              <img
+                src={chapter.artwork_url}
+                className={`${Styles.DesktopImage} ${
+                  chapter.id === 44 ? `${Styles.StartTop}` : ''
+                }`}
+              />
 
               <div className={Styles.DesktopTextContainer}>
                 <p className={Styles.ChapterNumberEnglish}>{chapter.number}</p>

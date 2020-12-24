@@ -31,7 +31,10 @@ const ChapterInfoScreen = props => {
   return (
     <>
       <div className={Styles.Container}>
-        <DribbbleImageContainer imageUrl={chapter.artwork_url} />
+        <DribbbleImageContainer
+          id={chapter.id}
+          imageUrl={chapter.artwork_url}
+        />
         <br />
         <ChapterInfo
           number={chapter.number}

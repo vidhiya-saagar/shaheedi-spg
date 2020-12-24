@@ -98,6 +98,10 @@
     opacity: 0.4;
   }
 
+  .DesktopImage.StartTop {
+    object-position: top;
+  }
+
   .MobileTextContainer {
     display: none;
   }
