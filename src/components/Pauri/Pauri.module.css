@@ -36,11 +36,17 @@
 
 .Translation {
   font-family: 'Playfair Display', serif;
+  font-style: italic;
   color: #2D2D2F;
+  font-weight: 600;
+}
+
+.DarkMode .Translation {
+  color: #EFCF83;
 }
 
 .PauriContainer {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 @media screen and (min-width: 64em) {

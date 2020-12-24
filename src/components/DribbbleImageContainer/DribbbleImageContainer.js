@@ -18,7 +18,9 @@ const DribbbleImageContainer = props => {
       >
         <img
           src={props.imageUrl}
-          className={`${Styles.Image} ${Styles.Content}`}
+          className={`${Styles.Image} ${Styles.Content} ${
+            props.id === 44 ? `${Styles.StartTop}` : ''
+          }`}
         />
       </div>
 
@@ -38,7 +40,9 @@ const DribbbleImageContainer = props => {
         >
           <img
             src={props.imageUrl}
-            className={`${Styles.Image} ${Styles.Content}`}
+            className={`${Styles.Image} ${Styles.Content} ${
+              props.id === 44 ? `${Styles.StartTop}` : ''
+            }`}
           />
         </Grid>
       </Grid>

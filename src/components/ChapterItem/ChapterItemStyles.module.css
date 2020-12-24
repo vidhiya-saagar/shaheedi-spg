@@ -18,6 +18,10 @@
   object-fit: cover;
 }
 
+.StartTop {
+  object-position: top;
+}
+
 /* DarkMode */
 .DarkMode .Artwork {
   border: 1.5px solid #EFCf83;
