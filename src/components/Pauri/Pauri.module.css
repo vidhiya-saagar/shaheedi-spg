@@ -36,9 +36,8 @@
 
 .Translation {
   font-family: 'Playfair Display', serif;
-  font-style: italic;
-  color: #2D2D2F;
-  font-weight: 600;
+  color: #DD715A;
+  font-weight: 500;
 }
 
 .DarkMode .Translation {
