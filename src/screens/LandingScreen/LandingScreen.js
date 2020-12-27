@@ -50,7 +50,7 @@ const LandingPage = () => {
           </Grid>
         </Grid>
 
-        {/* Into to SPG */}
+        {/* Section 1 - Intro to the Granth */}
         <Grid column={true} sm={12} md={10} lg={10} customClass={Styles.Sec}>
           <Grid alignItems="flex-start" justify="center">
             <Grid column={true} sm={12} md={12} lg={12}>
@@ -90,7 +90,28 @@ const LandingPage = () => {
                       Sahibs can be explored through the numerous volumes of
                       poetic beauty.
                     </p>
+                  </div>
+                </Grid>
+              </Grid>
 
+              {/* Second Row */}
+              <Grid
+                alignItems="flex-start"
+                justify="center"
+                customClass={`${Styles.Sec} ${Styles.MobileReverse}`}
+              >
+                <Grid column={true} sm={12} md={6} lg={6}>
+                  <img
+                    src="https://i.postimg.cc/28H9Qc6N/kavihiresnoborder-optimized.png"
+                    className={Styles.ContentImage}
+                  />
+                  <p className={Styles.SubText}>
+                    Kavi Santokh Singh - Minature painting by{' '}
+                    <i>Jatinder Singh Durhailay</i>
+                  </p>
+                </Grid>
+                <Grid column={true} sm={12} md={6} lg={6}>
+                  <div className={Styles.SecText}>
                     <p>
                       The work is primarily written in <i>Braj Bhasha</i>, a
                       western Hindi language in the times preceding the 19th
@@ -120,53 +141,11 @@ const LandingPage = () => {
                   </div>
                 </Grid>
               </Grid>
-              {/* Second Row */}
-
-              <Grid
-                alignItems="flex-start"
-                justify="center"
-                customClass={`${Styles.Sec} ${Styles.MobileReverse}`}
-              >
-                <Grid column={true} sm={12} md={6} lg={6}>
-                  <img
-                    src="https://i.postimg.cc/28H9Qc6N/kavihiresnoborder-optimized.png"
-                    className={Styles.ContentImage}
-                  />
-                  <p className={Styles.SubText}>
-                    Kavi Santokh Singh - Minature painting by{' '}
-                    <i>Jatinder Singh Durhailay</i>
-                  </p>
-                </Grid>
-                <Grid column={true} sm={12} md={6} lg={6}>
-                  <div className={Styles.SecText}>
-                    <p>
-                      The work is primarily written in Braj Bhasha, a Western
-                      Hindi language in the times preceding the 19th century.
-                      SPG is structured in a way that it relates to the rays of
-                      the Sun itself; as a way of reflecting the Guru’s glory.
-                      SPG ranges to over 1600 angs and consists of 51,820 verses
-                      of various, sophisticated poetic devices. The literary
-                      work is broken down into 14 <i>jildhs</i> (volumes), 6
-                      <i>ruts</i>, and 2 directions in resemblance to the rising
-                      and setting of the sun.
-                    </p>
-
-                    <p>
-                      SPG remains a vital source of reference to the lives of
-                      the Gurus and is the most commonly used historical source
-                      for discourse amongst the Sikh diaspora. Among the 5
-                      takhts, discourse on Suraj Prakash is done every day where
-                      a reader (Paathi) would read aloud lines from the text and
-                      discourse would be done from the Kathavaachik.
-                    </p>
-                  </div>
-                </Grid>
-              </Grid>
             </Grid>
           </Grid>
         </Grid>
 
-        {/* Section 1 - About Kavi Ji */}
+        {/* Section 2 - About Kavi Ji */}
         <Grid column={true} sm={12} md={10} lg={10} customClass={Styles.Sec}>
           <Grid
             alignItems="flex-start"
@@ -188,34 +167,75 @@ const LandingPage = () => {
               <div className={Styles.SecText}>
                 <h3>The Great Poet</h3>
                 <p>
-                  Kavi Raaj Bhai Santokh Singh has played an extremely relevant
-                  role in today’s Sikh world as one of the renowned references
-                  of Sikh history and philosophy. Kavi Ji was from a village
-                  Noor Di Saraan in the district of Amritsar born into the house
-                  of father Deva Singh and mother Raezadi Kaur. At an early age
-                  Kavi Ji would be sent to obtain vidya under the tutelage of
-                  Giani Sant Singh, head Granthi of Sri Harmandir Sahib and a
-                  renowned Gurmat scholar. Through the duration of their vidya
-                  under Giani Sant Singh, Kavi Ji would learn Braj Bhasha,
-                  Brahmvidya and experience the divine; all of the foundational
-                  pieces that attributed to their creation (Rachna) of such a
-                  wondrous Granth. Alongside, Braj Bhasha, Kavi Ji would learn a
-                  multitude of languages such as Farsi, Sanskrit, and take part
-                  in religious discourse with acknowledged scholars of the Sikh
-                  and Hindu faith. Throughout their life, Kavi Ji has been
-                  described to be a devout Gursikh who would wake in the early
-                  hours of the day and dedicate their time to bhajan leading on
-                  to writing literary works themselves.
+                  Kavi Raaj Bhai Santokh Singh has played an essential role in
+                  today’s Sikh world as one of the most renowned scholars of
+                  Sikh history and philosophy. Kavi Ji were from the village
+                  Noor Di Saraan in the district of Amritsar; born into the
+                  house of father Deva Singh and mother Raezadi Kaur. At an
+                  early age, Kavi Ji would be sent to obtain <i>vidya</i> under
+                  the tutelage of Giani Sant Singh, head Granthi of Sri
+                  Harmandir Sahib and a renowned Gurmat scholar. Through the
+                  duration of their <i>vidya</i> under Giani Sant Singh, Kavi Ji
+                  would learn <i>Braj Bhasha</i>, <i>Brahmvidya</i> and
+                  experience the divine; all of the foundational pieces that
+                  attributed to their creation (<i>rachna</i>) of such a
+                  wondrous Granth. Alongside <i>Braj Bhasha</i>, Kavi Ji would
+                  learn a multitude of languages such as Farsi, Sanskrit, and
+                  take part in religious discourse with acknowledged scholars of
+                  the Sikh and Hindu faith. Throughout their life, Kavi Ji have
+                  been described to be a devout Gursikh who would wake in the
+                  early hours of the day and dedicate their time to{' '}
+                  <i>bhajan</i>, leading on to writing literary works
+                  themselves.
                 </p>
                 <p>
-                  {' '}
-                  Kavi Ji spent time in various regions across Punjab spending
-                  their time teaching vidya and serving as an advisor to
-                  prominent Maharajas or a kathakaar to the Sangat. Among these
-                  travels, Kavi Ji wrote many important philosophical literary
-                  works including the Naam Kosh, Sri Guru Nanak Prakash, Garb
-                  Ganjini Teeka, Valmiki Ramayana and many others; a testament
-                  to the level of knowledge that they had amassed.
+                  Kavi Ji spent time in various regions across Punjab teaching
+                  <i>vidya</i> and serving as an advisor to prominent{' '}
+                  <i>Maharajas</i> or a <i>kathakaar</i> to the Sangat. Among
+                  these travels, Kavi Ji wrote many sophisticated philosophical
+                  literary works including the <i>Naam Kosh</i>,{' '}
+                  <i>Sri Guru Nanak Prakash</i>, <i>Garab Ganjani Teeka</i>,{' '}
+                  <i>Valmiki Ramayana</i> and many others; a testament to the
+                  level of knowledge that they had amassed.
+                </p>
+
+                <p>
+                  In the latter part of their life, around 1892{' '}
+                  <i>Bikrami samat</i> (~1835 Common era), Kavi Ji would begin
+                  the wondrous composition of SPG with the help of Sikh
+                  scholarly works, support of Maharaja Udai Singh of Kental, and
+                  the Guru’s <i>Shaheed Singhs</i> themselves. Kavi Ji would
+                  consolidate many various historical accounts of the Guru
+                  Sahibs from references including:
+                  <ul>
+                    <li>
+                      <i>Sikhan di Bhagat Mala</i> by Amar Shaheed Bhai Mani
+                      Singh
+                    </li>
+                    <li>Bhagat Ratnavali</li> by Amar Shaheed Bhai Mani Singh
+                    <li>
+                      <i>Bachittar Natak</i> by Sri Guru Gobind Singh Ji Maharaj
+                    </li>
+                    <li>
+                      <i>Gurbilas Patshahi 10</i> by Kuir Singh
+                    </li>
+                    <li>
+                      <i>Malwa Desh Ratan di Sakhi Pothi</i>
+                    </li>
+                    <li>
+                      <i>Sau Sakhi</i>
+                    </li>
+                    <li>
+                      Accounts of the Guru Sahiban by Bhai Ram Koer Ji (ancestor
+                      of Baba Buddha Ji)
+                    </li>
+                    <li>Accounts by local Gursikhs and many more…</li>
+                  </ul>
+                </p>
+                <p>
+                  Shortly before their passing, Kavi Ji completed the Granth, an
+                  embodiment of their life’s efforts, and gave ownership to the
+                  Guru Panth for the rights of usage at Sri Harmandir Sahib.
                 </p>
               </div>
             </Grid>
