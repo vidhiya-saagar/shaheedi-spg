@@ -35,7 +35,7 @@
   user-select: none; /* Standard */
 }
 /* Dark Mode  */
-.DarkMode .MainTitle, .DarkMode .SubTitle {
+.DarkMode .MainTitle, .DarkMode .SubTitle, .DarkMode a {
   color: #DD715A;
 }
 
