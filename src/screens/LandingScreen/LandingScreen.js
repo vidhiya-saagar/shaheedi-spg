@@ -254,7 +254,7 @@ const LandingPage = () => {
             {/* Text */}
             <Grid column={true} sm={12} md={6} lg={6}>
               <div className={Styles.SecText}>
-                <h3>In the Projects one day</h3>
+                <h3>The Project</h3>
                 <p>
                   This project has been undertaken with the intention to bring
                   Sri Suraj Prakash to the broader audience in a format that is
