@@ -81,7 +81,7 @@ const LandingPage = () => {
                     <p>
                       The historical text known as{' '}
                       <i>Sri Suraj Prakash Granth</i> (or
-                      <i>Sri Gurpratap Suraj Granth</i>) is a fountain of
+                      <i> Sri Gurpratap Suraj Granth</i>) is a fountain of
                       inspiration, which in today’s date is read and
                       contemplated amongst the diaspora. Written by Kavi Raaj
                       Bhai Santokh Singh, <i>Suraj Prakash Granth</i> (SPG)
