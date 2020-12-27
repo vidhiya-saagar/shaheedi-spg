@@ -242,6 +242,40 @@ const LandingPage = () => {
           </Grid>
         </Grid>
 
+        {/* Section 2 - About Kavi Ji */}
+        <Grid column={true} sm={12} md={10} lg={10} customClass={Styles.Sec}>
+          <Grid
+            alignItems="flex-start"
+            justify="center"
+            customClass={Styles.Reverse}
+          >
+            {/* Nothing */}
+            <Grid column={true} sm={12} md={6} lg={6}></Grid>
+            {/* Text */}
+            <Grid column={true} sm={12} md={6} lg={6}>
+              <div className={Styles.SecText}>
+                <h3>In the Projects one day</h3>
+                <p>
+                  This project has been undertaken with the intention to bring
+                  Sri Suraj Prakash to the broader audience in a format that is
+                  digestible by today’s audience of readers that are well versed
+                  in the English language. In today’s digital world, the ability
+                  to hear and see the very same text being contemplated holds a
+                  large value and makes for an engaging experience. In the same
+                  manner, this application intends to develop an experience with
+                  the intention of making Kavi Ji’s relevant account of Sikh
+                  history accessible to the world. Please forgive us for any
+                  mistakes made within the process of digitizing such a piece of
+                  work and feel free to provide any comments to{` `}
+                  <a href="srisurajprakash@protonmail.com">
+                    srisurajprakash@protonmail.com
+                  </a>
+                </p>
+              </div>
+            </Grid>
+          </Grid>
+        </Grid>
+
         {/* Next Button */}
         <Grid column={true} sm={12} md={10} lg={10} customClass={Styles.Sec}>
           <Link to={`/chapters`}>
