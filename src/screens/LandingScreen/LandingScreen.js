@@ -189,7 +189,7 @@ const LandingPage = () => {
                   themselves.
                 </p>
                 <p>
-                  Kavi Ji spent time in various regions across Punjab teaching
+                  Kavi Ji spent time in various regions across Punjab teaching{' '}
                   <i>vidya</i> and serving as an advisor to prominent{' '}
                   <i>Maharajas</i> or a <i>kathakaar</i> to the Sangat. Among
                   these travels, Kavi Ji wrote many sophisticated philosophical
