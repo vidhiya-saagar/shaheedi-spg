@@ -1,5 +1,6 @@
 import * as fetch from 'node-fetch';
 const baseUrl = process.env.REACT_APP_BASE_URL;
+// const baseUrl = 'https://pink-shrimp-75.loca.lt/api/v1';
 
 export const fetchGet = async (url = '', data = {}) => {
   console.log('GET', url);
