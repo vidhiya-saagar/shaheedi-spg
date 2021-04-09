@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import Grid from '../../components/Grid';
 import PauriStyles from './Pauri.module.css';
 import { Context as ThemeContext } from '../../context/ThemeContext';
+import { toEnglish } from 'gurmukhi-utils';
 
 const Pauri = ({ number, tuks }) => {
   const { state: themeState } = useContext(ThemeContext);
@@ -25,7 +26,7 @@ const Pauri = ({ number, tuks }) => {
               {tuks.length === tuk.line_number && <span> ]{number}]</span>}
             </p>
             <p className={PauriStyles.EnglishTranslit}>
-              {tuk.content_transliteration_english}
+              {toEnglish(tuk.content_unicode)}
               {tuks.length === tuk.line_number && <span> ||{number}||</span>}
             </p>
             {tuk?.translation && (
