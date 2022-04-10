@@ -17,7 +17,20 @@ const ChapterInfoScreen = props => {
     title_translation: '',
     title_transliteration_english: '',
     description_english: '',
+    book_id: 2,
   });
+
+  const previousChaptersPath = bookId => {
+    switch (bookId) {
+      case 2:
+        return '/books/rut-6';
+      case 3:
+        return '/books/raas-12';
+      default:
+        return '/books';
+    }
+  };
+
   const [kathas, setKathas] = useState(null);
 
   useEffect(() => {
@@ -47,7 +60,7 @@ const ChapterInfoScreen = props => {
 
         <Grid alignItems="center" justify="center">
           <Grid column={true} sm={12} md={8} lg={6}>
-            <Link to={`/chapters`}>
+            <Link to={previousChaptersPath(chapter.book_id)}>
               <button
                 className={`${CornerButtonStyles.Orange} ${CornerButtonStyles.BottomLeft}`}
               >
