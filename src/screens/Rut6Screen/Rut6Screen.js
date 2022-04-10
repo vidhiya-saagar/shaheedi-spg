@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useContext } from 'react';
-import Styles from './ChapterIndexScreenStyle.module.css';
+import Styles from './Rut6ScreenStyle.module.css';
 import Grid from '../../components/Grid';
 import ChapterListStyles from '../../components/ChapterList/ChapterList.module.css';
 import { fetchGet } from '../../helper/fetchHelper';
@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 import CornerButtonStyles from '../../components/CornerButton/CornerButtonStyles.module.css';
 import { Context as ThemeContext } from '../../context/ThemeContext';
 
-const ChapterIndexScreen = () => {
+const Rut6Screen = () => {
   const { state: themeState } = useContext(ThemeContext);
   const isDarkMode = themeState.currentTheme === 'DARK';
   const [chamkaurChapters, setChamkaurChapters] = useState(null);
@@ -76,4 +76,4 @@ const ChapterIndexScreen = () => {
   );
 };
 
-export default ChapterIndexScreen;
+export default Rut6Screen;

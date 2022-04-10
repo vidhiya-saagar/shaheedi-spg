@@ -3,7 +3,7 @@ import './App.css';
 import { useContext } from 'react';
 import Header from './components/Header';
 import ChapterInfoScreen from './screens/ChapterInfoScreen';
-import ChapterIndexScreen from './screens/ChapterIndexScreen';
+import Rut6Screen from './screens/Rut6Screen';
 import BookIndexScreen from './screens/BookIndexScreen';
 import ReadChapterScreen from './screens/ReadChapterScreen';
 import LandingScreen from './screens/LandingScreen';
@@ -27,7 +27,7 @@ function App() {
             <BookIndexScreen />
           </Route>
           <Route exact path="/books/rut-6">
-            <ChapterIndexScreen />
+            <Rut6Screen />
           </Route>
           <Route exact path="/chapters/:id">
             <ChapterInfoScreen />
