@@ -5,7 +5,6 @@ import ChapterListStyles from '../../components/ChapterList/ChapterList.module.c
 import { fetchGet } from '../../helper/fetchHelper';
 import ChapterList from '../../components/ChapterList';
 import { Link } from 'react-router-dom';
-import CornerButton from '../../components/CornerButton';
 import CornerButtonStyles from '../../components/CornerButton/CornerButtonStyles.module.css';
 import { Context as ThemeContext } from '../../context/ThemeContext';
 

@@ -1,0 +1,32 @@
+.PageTitle {
+  text-align: left;
+  font-size: 24px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  color: #2D2D2F;
+}
+
+.DarkMode .PageTitle {
+  color: #F7EBD4;
+}
+
+.BookContainer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.BookDescText {
+  font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 32px;
+  position: absolute;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (min-width: 40em) {
+  .PageTitle {
+    font-size: 32px;
+  }
+}

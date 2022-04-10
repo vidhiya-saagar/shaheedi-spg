@@ -19,7 +19,14 @@ const LandingPage = () => {
         {/* Maybe Header */}
         <Grid column={true} sm={12} md={12} lg={12}>
           <section className={Styles.SkewedContainer}>
-            <div className={Styles.Skewed}></div>
+            <div className={Styles.Skewed}>
+              <img
+                className={Styles.KaviHeader}
+                height={200}
+                loading="lazy"
+                src="https://i.postimg.cc/7hpw40vw/Screen-Shot-2020-12-19-at-2-38-05-PM.png"
+              />
+            </div>
           </section>
         </Grid>
 
@@ -29,6 +36,9 @@ const LandingPage = () => {
             {/* Logo */}
             <Grid column={true} sm={4} md={4} lg={4}>
               <img
+                loading="lazy"
+                decoding="async"
+                height={100}
                 src="https://shaheedi-spg.s3.amazonaws.com/StaticImages/SPGLogo_Comp.png"
                 className={Styles.SpgLogo}
               />
@@ -63,6 +73,8 @@ const LandingPage = () => {
                 {/* First Image  */}
                 <Grid column={true} sm={12} md={6} lg={6}>
                   <img
+                    loading="lazy"
+                    decoding="async"
                     src="https://shaheedi-spg.s3.amazonaws.com/StaticImages/KaviJiWriting_LosslessComp.jpg"
                     className={Styles.ContentImage}
                   />
@@ -102,6 +114,8 @@ const LandingPage = () => {
               >
                 <Grid column={true} sm={12} md={6} lg={6}>
                   <img
+                    loading="lazy"
+                    decoding="async"
                     src="https://i.postimg.cc/28H9Qc6N/kavihiresnoborder-optimized.png"
                     className={Styles.ContentImage}
                   />
@@ -155,6 +169,8 @@ const LandingPage = () => {
             {/* Image */}
             <Grid column={true} sm={12} md={6} lg={6}>
               <img
+                loading="lazy"
+                decoding="async"
                 src="https://shaheedi-spg.s3.amazonaws.com/StaticImages/GianiSantSinghCaligraph_Comp.jpg"
                 className={Styles.ContentImage}
               />
@@ -282,7 +298,7 @@ const LandingPage = () => {
             <button
               className={`${CornerButtonStyles.Orange} ${CornerButtonStyles.BottomRight}`}
             >
-              Chamkaur
+              Books
             </button>
           </Link>
         </Grid>

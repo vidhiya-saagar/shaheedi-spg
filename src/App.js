@@ -4,6 +4,7 @@ import { useContext } from 'react';
 import Header from './components/Header';
 import ChapterInfoScreen from './screens/ChapterInfoScreen';
 import ChapterIndexScreen from './screens/ChapterIndexScreen';
+import BookIndexScreen from './screens/BookIndexScreen';
 import ReadChapterScreen from './screens/ReadChapterScreen';
 import LandingScreen from './screens/LandingScreen';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -22,7 +23,10 @@ function App() {
           <Route exact path="/">
             <LandingScreen />
           </Route>
-          <Route exact path="/chapters">
+          <Route exact path="/books">
+            <BookIndexScreen />
+          </Route>
+          <Route exact path="/books/rut-6">
             <ChapterIndexScreen />
           </Route>
           <Route exact path="/chapters/:id">
