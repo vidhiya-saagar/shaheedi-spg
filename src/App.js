@@ -9,6 +9,7 @@ import ReadChapterScreen from './screens/ReadChapterScreen';
 import LandingScreen from './screens/LandingScreen';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Context as ThemeContext } from './context/ThemeContext';
+import Raas12Screen from './screens/Raas12Screen';
 
 function App() {
   const { state: themeState } = useContext(ThemeContext);
@@ -28,6 +29,9 @@ function App() {
           </Route>
           <Route exact path="/books/rut-6">
             <Rut6Screen />
+          </Route>
+          <Route exact path="/books/raas-12">
+            <Raas12Screen />
           </Route>
           <Route exact path="/chapters/:id">
             <ChapterInfoScreen />

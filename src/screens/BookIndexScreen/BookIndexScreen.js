@@ -41,7 +41,7 @@ const BookIndexScreen = () => {
               }
             >
               <div className={Styles.BookContainer}>
-                <Link to={`/`}>
+                <Link to={`/books/raas-12`}>
                   <div className={Styles.ImageContainer}>
                     <div className={Styles.BookDescText}>
                       <p>
@@ -73,7 +73,7 @@ const BookIndexScreen = () => {
                     son, Gobind Daas and various adventures leading up to their
                     martyrdom in Delhi.
                   </p>
-                  <Link to={`/`}>
+                  <Link to={`/books/raas-12`}>
                     <button>Read Raas 12</button>
                   </Link>
                 </div>
