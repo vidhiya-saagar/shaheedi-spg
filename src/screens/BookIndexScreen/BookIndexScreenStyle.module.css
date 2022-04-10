@@ -12,6 +12,12 @@
 
 .BookContainer {
   display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+}
+
+.ImageContainer {
+  display: flex;
   justify-content: center;
   position: relative;
 }
@@ -20,13 +26,46 @@
   font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 32px;
   position: absolute;
-  background: -webkit-linear-gradient(#eee, #333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #EEE5E9;
+  font-family: 'Cormorant Garamond', 'Georgia', 'Cambria', 'Times New Roman', serif;
+  padding: 0.5em;
+}
+
+.BookInfo {
+  text-align: justify;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.BookInfo p {
+  padding: 10px 0;
+}
+
+.BGBlack {
+  background: rgba(0 0 0 / 75%);
+}
+
+.Cover {
+  object-fit: cover;
+  object-position: top;
 }
 
 @media screen and (min-width: 40em) {
   .PageTitle {
     font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .BookDescText {
+    padding: 1em;
+  }
+
+  .BookInfo p {
+    margin-top: 10px;
+    height: 100px;
+    margin-bottom: 20px;
   }
 }

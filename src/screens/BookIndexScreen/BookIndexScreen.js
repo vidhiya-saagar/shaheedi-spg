@@ -3,6 +3,7 @@ import Grid from '../../components/Grid';
 import Styles from './BookIndexScreenStyle.module.css';
 import { fetchGet } from '../../helper/fetchHelper';
 import { Context as ThemeContext } from '../../context/ThemeContext';
+import { Link } from 'react-router-dom';
 
 const BookIndexScreen = () => {
   const { state: themeState } = useContext(ThemeContext);
@@ -21,21 +22,85 @@ const BookIndexScreen = () => {
               <h3 className={Styles.PageTitle}>Books</h3>
             </Grid>
 
-            {/* ChapterLists (X-Scroll on Mobile) */}
+            {/* Raas 12 */}
             <Grid
               column={true}
               sm={12}
-              md={12}
-              lg={10}
+              md={7}
+              lg={6}
               customClass={isDarkMode ? `${Styles.DarkMode}` : ''}
             >
               <div className={Styles.BookContainer}>
-                <p className={Styles.BookDescText}>The Battle of Chamkaur</p>
-                <img
-                  height={260}
-                  loading="lay"
-                  src="https://cdn.discordapp.com/attachments/785696929664466964/791159814126436352/Untitled_Artwork.PNG"
-                />
+                <div className={Styles.ImageContainer}>
+                  <div className={Styles.BookDescText}>
+                    <p>
+                      <span className={Styles.BGBlack}>
+                        The Life of the 9th Guru
+                      </span>
+                    </p>
+                    <p>~1666</p>
+                  </div>
+                  <img
+                    height={260}
+                    width="100%"
+                    loading="lazy"
+                    decoding="async"
+                    className={Styles.Cover}
+                    src="https://upload.wikimedia.org/wikipedia/commons/0/09/Portrait_of_Guru_Tegh_Bahadur_by_painter_Ahsan.jpg"
+                  />
+                </div>
+                <div className={Styles.BookInfo}>
+                  <p>
+                    The vita of Guru Tegh Bahadur can be found in the SPG in the
+                    final two Raas'; Raas 11 and Raas 12. In the twlfth Raas, we
+                    will witness the Guru's travel, the <i>avtaar</i> of their
+                    son, Gobind Daas and various adventures leading up to their
+                    martyrdom in Delhi.
+                  </p>
+                  <Link to={`/`}>
+                    <button>Read Raas 12</button>
+                  </Link>
+                </div>
+              </div>
+            </Grid>
+
+            {/* Rut 6 */}
+            <Grid
+              column={true}
+              sm={12}
+              md={7}
+              lg={6}
+              customClass={isDarkMode ? `${Styles.DarkMode}` : ''}
+            >
+              <div className={Styles.BookContainer}>
+                <div className={Styles.ImageContainer}>
+                  <div className={Styles.BookDescText}>
+                    <p>
+                      <span className={Styles.BGBlack}>
+                        Guru Gobind Singh & The Greatest Battle
+                      </span>
+                    </p>
+                    <p>~1704</p>
+                  </div>
+                  <img
+                    height={260}
+                    width="100%"
+                    loading="lazy"
+                    decoding="async"
+                    className={Styles.Cover}
+                    src="https://cdn.discordapp.com/attachments/785696929664466964/791159814126436352/Untitled_Artwork.PNG"
+                  />
+                </div>
+                <div className={Styles.BookInfo}>
+                  <p>
+                    The six <i>ruts</i> - meaning seasons - are all centered
+                    around Guru Gobind Singh. The Battle of Chamkaur can be
+                    found in the Rut 6 of the Suraj Prakash Granth.
+                  </p>
+                  <Link to={`/`}>
+                    <button>Read Rut 6</button>
+                  </Link>
+                </div>
               </div>
             </Grid>
           </Grid>
