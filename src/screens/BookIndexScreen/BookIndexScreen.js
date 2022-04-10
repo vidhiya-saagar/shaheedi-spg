@@ -18,7 +18,13 @@ const BookIndexScreen = () => {
       >
         <Grid column={true} sm={12} md={12} lg={10}>
           <Grid alignItems="center" justify="center">
-            <Grid column={true} sm={12} md={12} lg={10}>
+            <Grid
+              column={true}
+              sm={12}
+              md={7}
+              lg={12}
+              customClass={Styles.MorePad}
+            >
               <h3 className={Styles.PageTitle}>Books</h3>
             </Grid>
 
@@ -28,27 +34,37 @@ const BookIndexScreen = () => {
               sm={12}
               md={7}
               lg={6}
-              customClass={isDarkMode ? `${Styles.DarkMode}` : ''}
+              customClass={
+                isDarkMode
+                  ? `${Styles.DarkMode} ${Styles.MorePad}`
+                  : Styles.MorePad
+              }
             >
               <div className={Styles.BookContainer}>
-                <div className={Styles.ImageContainer}>
-                  <div className={Styles.BookDescText}>
-                    <p>
-                      <span className={Styles.BGBlack}>
-                        The Life of the 9th Guru
-                      </span>
-                    </p>
-                    <p>~1666</p>
+                <Link to={`/`}>
+                  <div className={Styles.ImageContainer}>
+                    <div className={Styles.BookDescText}>
+                      <p>
+                        <span className={Styles.BGBlack}>
+                          The Life of the 9th Guru
+                        </span>
+                      </p>
+                      <p>~1666</p>
+                    </div>
+                    <img
+                      height={260}
+                      width="100%"
+                      loading="lazy"
+                      decoding="async"
+                      className={Styles.Cover}
+                      src="https://upload.wikimedia.org/wikipedia/commons/0/09/Portrait_of_Guru_Tegh_Bahadur_by_painter_Ahsan.jpg"
+                    />
+                    <div className={Styles.NewBadge}>
+                      <span className={Styles.Dot}></span>
+                      New
+                    </div>
                   </div>
-                  <img
-                    height={260}
-                    width="100%"
-                    loading="lazy"
-                    decoding="async"
-                    className={Styles.Cover}
-                    src="https://upload.wikimedia.org/wikipedia/commons/0/09/Portrait_of_Guru_Tegh_Bahadur_by_painter_Ahsan.jpg"
-                  />
-                </div>
+                </Link>
                 <div className={Styles.BookInfo}>
                   <p>
                     The vita of Guru Tegh Bahadur can be found in the SPG in the
@@ -73,31 +89,33 @@ const BookIndexScreen = () => {
               customClass={isDarkMode ? `${Styles.DarkMode}` : ''}
             >
               <div className={Styles.BookContainer}>
-                <div className={Styles.ImageContainer}>
-                  <div className={Styles.BookDescText}>
-                    <p>
-                      <span className={Styles.BGBlack}>
-                        Guru Gobind Singh & The Greatest Battle
-                      </span>
-                    </p>
-                    <p>~1704</p>
+                <Link to={`/books/rut-6`}>
+                  <div className={Styles.ImageContainer}>
+                    <div className={Styles.BookDescText}>
+                      <p>
+                        <span className={Styles.BGBlack}>
+                          Guru Gobind Singh & The Greatest Battle
+                        </span>
+                      </p>
+                      <p>~1704</p>
+                    </div>
+                    <img
+                      height={260}
+                      width="100%"
+                      loading="lazy"
+                      decoding="async"
+                      className={Styles.Cover}
+                      src="https://cdn.discordapp.com/attachments/785696929664466964/791159814126436352/Untitled_Artwork.PNG"
+                    />
                   </div>
-                  <img
-                    height={260}
-                    width="100%"
-                    loading="lazy"
-                    decoding="async"
-                    className={Styles.Cover}
-                    src="https://cdn.discordapp.com/attachments/785696929664466964/791159814126436352/Untitled_Artwork.PNG"
-                  />
-                </div>
+                </Link>
                 <div className={Styles.BookInfo}>
                   <p>
                     The six <i>ruts</i> - meaning seasons - are all centered
                     around Guru Gobind Singh. The Battle of Chamkaur can be
                     found in the Rut 6 of the Suraj Prakash Granth.
                   </p>
-                  <Link to={`/`}>
+                  <Link to={`/books/rut-6`}>
                     <button>Read Rut 6</button>
                   </Link>
                 </div>

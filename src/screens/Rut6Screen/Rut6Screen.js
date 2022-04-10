@@ -52,7 +52,7 @@ const Rut6Screen = () => {
             </Grid>
           </Grid>
 
-          {/* Only Show Button When Chapters Have Loaded */}
+          {/* This is poor design choice... Should rethink this */}
           {chamkaurChapters?.length > 0 && (
             <Grid
               alignItems="center"
@@ -60,11 +60,11 @@ const Rut6Screen = () => {
               customClass={ChapterListStyles.ButtonContainer}
             >
               <Grid column={true} sm={12} md={12} lg={10}>
-                <Link to={`/`}>
+                <Link to={`/books`}>
                   <button
                     className={`${CornerButtonStyles.Orange} ${CornerButtonStyles.BottomLeft}`}
                   >
-                    Home
+                    Books
                   </button>
                 </Link>
               </Grid>

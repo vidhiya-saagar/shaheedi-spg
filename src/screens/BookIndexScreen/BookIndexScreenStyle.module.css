@@ -20,6 +20,7 @@
   display: flex;
   justify-content: center;
   position: relative;
+  border: 1.5px solid #EFCf83;
 }
 
 .BookDescText {
@@ -41,6 +42,7 @@
 
 .BookInfo p {
   padding: 10px 0;
+  color: #F7EBD4;
 }
 
 .BGBlack {
@@ -52,9 +54,38 @@
   object-position: top;
 }
 
+.Dot {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin-right: 4px;
+  background-color: #795616;
+  border-radius: 999px;
+}
+
+.NewBadge {
+  color: #374151;
+  background: #E3B664;
+  position: absolute;
+  /* This doesn't show up on Mobile properly  */
+  right: -10px;
+  width: 60px;
+  height: 30px;
+  top: -15px;
+  border-radius: 1em;
+  font-family: Josefin Sans;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+}
+
 @media screen and (min-width: 40em) {
   .PageTitle {
     font-size: 32px;
+  }
+  .NewBadge {
+    right: -30px;
   }
 }
 
@@ -67,5 +98,10 @@
     margin-top: 10px;
     height: 100px;
     margin-bottom: 20px;
+  }
+
+  .MorePad {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }

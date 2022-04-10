@@ -294,7 +294,7 @@ const LandingPage = () => {
 
         {/* Next Button */}
         <Grid column={true} sm={12} md={10} lg={10} customClass={Styles.Sec}>
-          <Link to={`/chapters`}>
+          <Link to={`/books`}>
             <button
               className={`${CornerButtonStyles.Orange} ${CornerButtonStyles.BottomRight}`}
             >
