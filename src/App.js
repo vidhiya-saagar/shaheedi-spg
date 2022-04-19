@@ -3,11 +3,13 @@ import './App.css';
 import { useContext } from 'react';
 import Header from './components/Header';
 import ChapterInfoScreen from './screens/ChapterInfoScreen';
-import ChapterIndexScreen from './screens/ChapterIndexScreen';
+import Rut6Screen from './screens/Rut6Screen';
+import BookIndexScreen from './screens/BookIndexScreen';
 import ReadChapterScreen from './screens/ReadChapterScreen';
 import LandingScreen from './screens/LandingScreen';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Context as ThemeContext } from './context/ThemeContext';
+import Raas12Screen from './screens/Raas12Screen';
 
 function App() {
   const { state: themeState } = useContext(ThemeContext);
@@ -22,8 +24,14 @@ function App() {
           <Route exact path="/">
             <LandingScreen />
           </Route>
-          <Route exact path="/chapters">
-            <ChapterIndexScreen />
+          <Route exact path="/books">
+            <BookIndexScreen />
+          </Route>
+          <Route exact path="/books/rut-6">
+            <Rut6Screen />
+          </Route>
+          <Route exact path="/books/raas-12">
+            <Raas12Screen />
           </Route>
           <Route exact path="/chapters/:id">
             <ChapterInfoScreen />

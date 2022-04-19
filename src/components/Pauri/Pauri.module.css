@@ -15,8 +15,14 @@
   font-size: 1.4em;
 }
 
+.Satluj {
+  color: #543828;
+  font-family: 'Satluj';
+  font-size: 1.4em;
+}
+
 /* Dark Mode */
-.DarkMode .GurmukhiScriptTuk {
+.DarkMode .GurmukhiScriptTuk, .DarkMode .Satluj {
   color: #F7EBD4;
 }
 

@@ -1,25 +1,24 @@
 import React, { useEffect, useState, useContext } from 'react';
-import Styles from './ChapterIndexScreenStyle.module.css';
+import Styles from './Raas12ScreenStyle.module.css';
 import Grid from '../../components/Grid';
 import ChapterListStyles from '../../components/ChapterList/ChapterList.module.css';
 import { fetchGet } from '../../helper/fetchHelper';
 import ChapterList from '../../components/ChapterList';
 import { Link } from 'react-router-dom';
-import CornerButton from '../../components/CornerButton';
 import CornerButtonStyles from '../../components/CornerButton/CornerButtonStyles.module.css';
 import { Context as ThemeContext } from '../../context/ThemeContext';
 
-const ChapterIndexScreen = () => {
+const Raas12Screen = () => {
   const { state: themeState } = useContext(ThemeContext);
   const isDarkMode = themeState.currentTheme === 'DARK';
   const [chamkaurChapters, setChamkaurChapters] = useState(null);
 
   useEffect(() => {
-    const fetchChamkaurChapters = async () => {
-      const res = await fetchGet('/chamkaur');
+    const fetchRaas12Chapters = async () => {
+      const res = await fetchGet('/books/3/chapters');
       setChamkaurChapters(res.chapters);
     };
-    fetchChamkaurChapters();
+    fetchRaas12Chapters();
   }, []);
 
   return (
@@ -32,7 +31,7 @@ const ChapterIndexScreen = () => {
         <Grid column={true} sm={12} md={12} lg={10}>
           <Grid alignItems="center" justify="center">
             <Grid column={true} sm={12} md={12} lg={10}>
-              <h3 className={Styles.PageTitle}>Rut 6 - Chapters</h3>
+              <h3 className={Styles.PageTitle}>Raas 12 - Chapters</h3>
             </Grid>
 
             {/* ChapterLists (X-Scroll on Mobile) */}
@@ -53,7 +52,7 @@ const ChapterIndexScreen = () => {
             </Grid>
           </Grid>
 
-          {/* Only Show Button When Chapters Have Loaded */}
+          {/* This is poor design choice... Should rethink this */}
           {chamkaurChapters?.length > 0 && (
             <Grid
               alignItems="center"
@@ -61,11 +60,11 @@ const ChapterIndexScreen = () => {
               customClass={ChapterListStyles.ButtonContainer}
             >
               <Grid column={true} sm={12} md={12} lg={10}>
-                <Link to={`/`}>
+                <Link to={`/books`}>
                   <button
                     className={`${CornerButtonStyles.Orange} ${CornerButtonStyles.BottomLeft}`}
                   >
-                    Home
+                    Books
                   </button>
                 </Link>
               </Grid>
@@ -77,4 +76,4 @@ const ChapterIndexScreen = () => {
   );
 };
 
-export default ChapterIndexScreen;
+export default Raas12Screen;

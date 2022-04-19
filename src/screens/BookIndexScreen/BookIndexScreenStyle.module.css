@@ -1,0 +1,111 @@
+.PageTitle {
+  text-align: left;
+  font-size: 24px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  color: #2D2D2F;
+}
+
+.DarkMode .PageTitle {
+  color: #F7EBD4;
+}
+
+.BookContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+}
+
+.ImageContainer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border: 1.5px solid #EFCf83;
+}
+
+.BookDescText {
+  font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 32px;
+  position: absolute;
+  color: #EEE5E9;
+  font-family: 'Cormorant Garamond', 'Georgia', 'Cambria', 'Times New Roman', serif;
+  padding: 0.5em;
+}
+
+.BookInfo {
+  text-align: justify;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.BookInfo p {
+  padding: 10px 0;
+  color: #2D2D2F;
+}
+
+.DarkMode .BookInfo p {
+  color: #F7EBD4;
+}
+
+.BGBlack {
+  background: rgba(0 0 0 / 75%);
+}
+
+.Cover {
+  object-fit: cover;
+  object-position: top;
+}
+
+.Dot {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin-right: 4px;
+  background-color: #795616;
+  border-radius: 999px;
+}
+
+.NewBadge {
+  color: #374151;
+  background: #E3B664;
+  position: absolute;
+  /* This doesn't show up on Mobile properly  */
+  right: -10px;
+  width: 60px;
+  height: 30px;
+  top: -15px;
+  border-radius: 1em;
+  font-family: Josefin Sans;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+}
+
+@media screen and (min-width: 40em) {
+  .PageTitle {
+    font-size: 32px;
+  }
+  .NewBadge {
+    right: -30px;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .BookDescText {
+    padding: 1em;
+  }
+
+  .BookInfo p {
+    margin-top: 10px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+
+  .MorePad {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
