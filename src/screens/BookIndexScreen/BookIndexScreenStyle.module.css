@@ -42,6 +42,10 @@
 
 .BookInfo p {
   padding: 10px 0;
+  color: #2D2D2F;
+}
+
+.DarkMode .BookInfo p {
   color: #F7EBD4;
 }
 
