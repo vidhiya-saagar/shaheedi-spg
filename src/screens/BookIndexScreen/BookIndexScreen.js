@@ -68,10 +68,10 @@ const BookIndexScreen = () => {
                 <div className={Styles.BookInfo}>
                   <p>
                     The vita of Guru Tegh Bahadur can be found in the SPG in the
-                    final two Raas'; Raas 11 and Raas 12. In the twlfth Raas, we
-                    will witness the Guru's travel, the <i>avtaar</i> of their
-                    son, Gobind Daas and various adventures leading up to their
-                    martyrdom in Delhi.
+                    final two Raas'; Raas 11 and Raas 12. In the twelfth Raas,
+                    we will witness the Guru's travel, the <i>avtaar</i> of
+                    their son, Gobind Daas and various adventures leading up to
+                    their martyrdom in Delhi.
                   </p>
                   <Link to={`/books/raas-12`}>
                     <button>Read Raas 12</button>
@@ -112,8 +112,8 @@ const BookIndexScreen = () => {
                 <div className={Styles.BookInfo}>
                   <p>
                     The six <i>ruts</i> - meaning seasons - are all centered
-                    around Guru Gobind Singh. The Battle of Chamkaur can be
-                    found in the Rut 6 of the Suraj Prakash Granth.
+                    around Guru Gobind Singh Ji. The Battle of Chamkaur can be
+                    found in the sixth Rut of the Suraj Prakash Granth.
                   </p>
                   <Link to={`/books/rut-6`}>
                     <button>Read Rut 6</button>
