@@ -26,7 +26,11 @@ const ChapterInfo = props => {
         customClass={isDarkMode ? `${Styles.DarkMode}` : ''}
       >
         <Grid column={true} sm={12} md={8} lg={6}>
-          <p className={Styles.Summary}>{props.summary}</p>
+          {props.summary.split('\n').map((paragraph, i) => (
+            <p key={i} className={Styles.Summary}>
+              {paragraph}
+            </p>
+          ))}
         </Grid>
       </Grid>
     </>
