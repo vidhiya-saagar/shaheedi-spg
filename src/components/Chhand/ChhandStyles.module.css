@@ -6,6 +6,12 @@
   margin: 0;
 }
 
+.GurmukhiUnicodeChhandName {
+  color: #2D2D2F;
+  font-size: 1.4em;
+  margin: 0;
+}
+
 .DarkMode .GurmukhiScriptChhandName {
   color: #DD715A;
 }
