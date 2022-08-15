@@ -34,6 +34,11 @@
   src: local('OpenSatlujUni-Bold.otf'), url(/src/fonts/OpenSatlujUni/Bold/OpenSatlujUni-Bold.otf) format('opentype');
 }
 
+@font-face {
+  font-family: 'Sant Lipi';
+  src: url(/src/fonts/SantLipi/SantLipiVF.ttf) format('truetype');
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
