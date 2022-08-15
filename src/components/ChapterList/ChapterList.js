@@ -19,6 +19,7 @@ const ChapterList = ({ chapters }) => {
               artwork={chapter.artwork_url}
               number={chapter.number}
               gurmukhiScript={chapter.title_gs}
+              gurmukhiUnicode={chapter.title_unicode}
               translation={chapter.title_translation}
             />
           </Grid>

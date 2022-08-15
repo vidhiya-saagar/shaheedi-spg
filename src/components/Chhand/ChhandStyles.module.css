@@ -7,13 +7,14 @@
 }
 
 .GurmukhiUnicodeChhandName {
+  font-family: 'Sant Lipi';
   color: #2D2D2F;
   font-size: 1.4em;
   margin: 0;
 }
 
-.DarkMode .GurmukhiScriptChhandName {
-  color: #DD715A;
+.DarkMode .GurmukhiScriptChhandName, .DarkMode .GurmukhiUnicodeChhandName {
+color: #DD715A;
 }
 
 .ChhandDiv {

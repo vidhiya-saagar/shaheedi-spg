@@ -35,10 +35,10 @@ const ChapterItem = props => {
         </div>
         <div className={ChapterItemStyles.TextContainer}>
           <p className={ChapterItemStyles.ChapterNameMain}>
-            {props.gurmukhiScript}
+            {props.gurmukhiUnicode}
           </p>
           <p className={ChapterItemStyles.ChapterNameFaded}>
-            {props.translation || 'No Name Yet...'}
+            {props.translation || ''}
           </p>
         </div>
       </Link>
