@@ -12,8 +12,8 @@
   margin: 0;
 }
 
-.DarkMode .GurmukhiScriptChhandName {
-  color: #DD715A;
+.DarkMode .GurmukhiScriptChhandName, .DarkMode .GurmukhiUnicodeChhandName {
+color: #DD715A;
 }
 
 .ChhandDiv {
