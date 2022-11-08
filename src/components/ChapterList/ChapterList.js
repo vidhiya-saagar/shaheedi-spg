@@ -9,6 +9,7 @@ const ChapterList = ({ chapters }) => {
       {chapters?.map(chapter => {
         return (
           <Grid
+            key={chapter.id}
             column={true}
             md={4}
             lg={4}
