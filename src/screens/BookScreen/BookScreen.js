@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useContext } from 'react';
-import Styles from './Raas12ScreenStyle.module.css';
+import Styles from './BookScreenStyle.module.css';
 import Grid from '../../components/Grid';
 import ChapterListStyles from '../../components/ChapterList/ChapterList.module.css';
 import { fetchGet } from '../../helper/fetchHelper';
@@ -8,17 +8,17 @@ import { Link } from 'react-router-dom';
 import CornerButtonStyles from '../../components/CornerButton/CornerButtonStyles.module.css';
 import { Context as ThemeContext } from '../../context/ThemeContext';
 
-const Raas12Screen = () => {
+const BookScreen = ({ bookName, apiUrl }) => {
   const { state: themeState } = useContext(ThemeContext);
   const isDarkMode = themeState.currentTheme === 'DARK';
-  const [chamkaurChapters, setChamkaurChapters] = useState(null);
+  const [chapters, setChapters] = useState(null);
 
   useEffect(() => {
-    const fetchRaas12Chapters = async () => {
-      const res = await fetchGet('/books/3/chapters');
-      setChamkaurChapters(res.chapters);
+    const fetchChapters = async () => {
+      const res = await fetchGet(apiUrl);
+      setChapters(res.chapters);
     };
-    fetchRaas12Chapters();
+    fetchChapters();
   }, []);
 
   return (
@@ -31,7 +31,7 @@ const Raas12Screen = () => {
         <Grid column={true} sm={12} md={12} lg={10}>
           <Grid alignItems="center" justify="center">
             <Grid column={true} sm={12} md={12} lg={10}>
-              <h3 className={Styles.PageTitle}>Raas 12 - Chapters</h3>
+              <h3 className={Styles.PageTitle}>{bookName} - Chapters</h3>
             </Grid>
 
             {/* ChapterLists (X-Scroll on Mobile) */}
@@ -47,13 +47,13 @@ const Raas12Screen = () => {
                 justify="flex-start"
                 customClass={ChapterListStyles.Flow}
               >
-                <ChapterList chapters={chamkaurChapters} />
+                <ChapterList chapters={chapters} />
               </Grid>
             </Grid>
           </Grid>
 
           {/* This is poor design choice... Should rethink this */}
-          {chamkaurChapters?.length > 0 && (
+          {chapters?.length > 0 && (
             <Grid
               alignItems="center"
               justify="center"
@@ -76,4 +76,4 @@ const Raas12Screen = () => {
   );
 };
 
-export default Raas12Screen;
+export default BookScreen;
