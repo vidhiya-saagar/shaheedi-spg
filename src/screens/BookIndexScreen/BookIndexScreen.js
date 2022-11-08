@@ -64,7 +64,12 @@ const BookIndexScreen = () => {
                   </div>
                 </Link>
                 <div className={Styles.BookInfo}>
-                  <p>Guru Nanak Dev Ji Maharaj!</p>
+                  <p>
+                    In gaining insight through studying Sikh historical texts
+                    and listening to the oral histories provided by villagers of
+                    the sites where Guru Nanak Dev Ji travelled, Kavi Santokh
+                    Singh Ji begins work on his <i>magnum opus</i>.
+                  </p>
                   <Link to={`/books/nanak-prakash-purbardh`}>
                     <button>Read Nanak Prakaash - Purbardh</button>
                   </Link>
