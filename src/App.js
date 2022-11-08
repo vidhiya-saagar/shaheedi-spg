@@ -1,7 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
 import { useContext } from 'react';
-import Header from './components/Header';
 import ChapterInfoScreen from './screens/ChapterInfoScreen';
 import BookIndexScreen from './screens/BookIndexScreen';
 import BookScreen from './screens/BookScreen';
@@ -9,7 +7,6 @@ import ReadChapterScreen from './screens/ReadChapterScreen';
 import LandingScreen from './screens/LandingScreen';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Context as ThemeContext } from './context/ThemeContext';
-import Raas12Screen from './screens/Raas12Screen';
 
 function App() {
   const { state: themeState } = useContext(ThemeContext);
