@@ -4,7 +4,7 @@ import PauriStyles from './Pauri.module.css';
 import { Context as ThemeContext } from '../../context/ThemeContext';
 import { toEnglish } from 'gurmukhi-utils';
 
-const Pauri = ({ number, tuks }) => {
+const Pauri = ({ number, signature_unicode, tuks }) => {
   const { state: themeState } = useContext(ThemeContext);
   const isDarkMode = themeState.currentTheme === 'DARK';
 
@@ -19,11 +19,13 @@ const Pauri = ({ number, tuks }) => {
             }`}
           >
             {/* 
-            <p className="faded-text">{tuk.content_unicode}</p>
+            <p className="faded-text">{}</p>
            */}
-            <p className={PauriStyles.GurmukhiScriptTuk}>
-              {tuk.content_gs}
-              {tuks.length === tuk.line_number && <span> ]{number}]</span>}
+            <p className={PauriStyles.GurmukhiUnicodeTuk}>
+              {tuk.content_unicode}
+              {tuks.length === tuk.line_number && (
+                <span> {signature_unicode}</span>
+              )}
             </p>
             <p className={PauriStyles.EnglishTranslit}>
               {toEnglish(tuk.content_unicode)}

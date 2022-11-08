@@ -17,8 +17,8 @@ const Chhand = props => {
         isDarkMode ? `${ChhandStyles.DarkMode}` : ''
       }`}
     >
-      <h4 className={ChhandStyles.GurmukhiScriptChhandName}>
-        {props.chhand_type.chhand_name_gs}
+      <h4 className={ChhandStyles.GurmukhiUnicodeChhandName}>
+        {props.chhand_type.chhand_name_unicode}
       </h4>
       {props.pauris.map(pauri => (
         <Pauri {...pauri} />

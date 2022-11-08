@@ -41,6 +41,50 @@ const BookIndexScreen = () => {
               }
             >
               <div className={Styles.BookContainer}>
+                <Link to={`/books/nanak-prakash-purbardh`}>
+                  <div className={Styles.ImageContainer}>
+                    <div className={Styles.BookDescText}>
+                      <p>
+                        <span className={Styles.BGBlack}>Nanak Prakaash</span>
+                      </p>
+                      <p>~1469</p>
+                    </div>
+                    <img
+                      height={260}
+                      width="100%"
+                      loading="lazy"
+                      decoding="async"
+                      className={Styles.Cover}
+                      src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Mural_painting_of_Guru_Nanak_from_Gurdwara_Baba_Atal_Rai.jpg"
+                    />
+                    <div className={Styles.NewBadge}>
+                      <span className={Styles.Dot}></span>
+                      New
+                    </div>
+                  </div>
+                </Link>
+                <div className={Styles.BookInfo}>
+                  <p>Guru Nanak Dev Ji Maharaj!</p>
+                  <Link to={`/books/nanak-prakash-purbardh`}>
+                    <button>Read Nanak Prakaash - Purbardh</button>
+                  </Link>
+                </div>
+              </div>
+            </Grid>
+
+            {/* Raas 12 */}
+            <Grid
+              column={true}
+              sm={12}
+              md={7}
+              lg={6}
+              customClass={
+                isDarkMode
+                  ? `${Styles.DarkMode} ${Styles.MorePad}`
+                  : Styles.MorePad
+              }
+            >
+              <div className={Styles.BookContainer}>
                 <Link to={`/books/raas-12`}>
                   <div className={Styles.ImageContainer}>
                     <div className={Styles.BookDescText}>
@@ -59,10 +103,6 @@ const BookIndexScreen = () => {
                       className={Styles.Cover}
                       src="https://upload.wikimedia.org/wikipedia/commons/0/09/Portrait_of_Guru_Tegh_Bahadur_by_painter_Ahsan.jpg"
                     />
-                    <div className={Styles.NewBadge}>
-                      <span className={Styles.Dot}></span>
-                      New
-                    </div>
                   </div>
                 </Link>
                 <div className={Styles.BookInfo}>

@@ -9,6 +9,7 @@ const ChapterList = ({ chapters }) => {
       {chapters?.map(chapter => {
         return (
           <Grid
+            key={chapter.id}
             column={true}
             md={4}
             lg={4}
@@ -19,6 +20,7 @@ const ChapterList = ({ chapters }) => {
               artwork={chapter.artwork_url}
               number={chapter.number}
               gurmukhiScript={chapter.title_gs}
+              gurmukhiUnicode={chapter.title_unicode}
               translation={chapter.title_translation}
             />
           </Grid>

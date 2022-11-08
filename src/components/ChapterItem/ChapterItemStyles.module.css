@@ -50,7 +50,7 @@
 }
 
 .ChapterNameMain {
-  font-family: 'Gurbani Akhar Black';
+  font-family: 'Sant Lipi';
   font-size: 18px;
   color: #543828;
 }
@@ -67,7 +67,7 @@
   font-size: 16px;
   letter-spacing: 0.1px;
   color: #2D2D2F;
-  opacity: 0.3;
+  opacity: 0.9;
 }
 
 /* DarkMode */
