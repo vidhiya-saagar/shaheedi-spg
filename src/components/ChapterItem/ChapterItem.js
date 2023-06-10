@@ -24,7 +24,7 @@ const ChapterItem = props => {
             decoding="async"
             width={200}
             height={200}
-            src={props.artwork}
+            src={props.artworkUrl}
             className={`${ChapterItemStyles.Artwork} ${
               props.id === 44 ? `${ChapterItemStyles.StartTop}` : ''
             }`}
@@ -34,11 +34,9 @@ const ChapterItem = props => {
           </div>
         </div>
         <div className={ChapterItemStyles.TextContainer}>
-          <p className={ChapterItemStyles.ChapterNameMain}>
-            {props.gurmukhiUnicode}
-          </p>
+          <p className={ChapterItemStyles.ChapterNameMain}>{props.title}</p>
           <p className={ChapterItemStyles.ChapterNameFaded}>
-            {props.translation || ''}
+            {props.enTitle || ''}
           </p>
         </div>
       </Link>

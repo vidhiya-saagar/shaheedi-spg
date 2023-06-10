@@ -31,11 +31,15 @@ function App() {
               bookName="Nanak Prakash Purbardh (Part 1)"
             />
           </Route>
-          <Route exact path="/books/rut-6">
-            <BookScreen apiUrl="/chamkaur" bookName="Rut 6" />
-          </Route>
           <Route exact path="/books/raas-12">
-            <BookScreen apiUrl="/books/3/chapters" bookName="Raas 12" />
+            <BookScreen apiUrl="/books/14/chapters" bookName="Raas 12" />
+          </Route>
+          <Route exact path="/books/rut-1">
+            <BookScreen apiUrl="/books/15/chapters" bookName="Rut 1" />
+          </Route>
+
+          <Route exact path="/books/rut-6">
+            <BookScreen apiUrl="/books/20/chapters" bookName="Rut 6" />
           </Route>
           <Route exact path="/chapters/:id">
             <ChapterInfoScreen />
