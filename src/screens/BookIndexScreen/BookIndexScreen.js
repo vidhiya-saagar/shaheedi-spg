@@ -28,6 +28,53 @@ const BookIndexScreen = () => {
               <h3 className={Styles.PageTitle}>Books</h3>
             </Grid>
 
+            {/* Rut 1 */}
+            <Grid
+              column={true}
+              sm={12}
+              md={7}
+              lg={6}
+              customClass={isDarkMode ? `${Styles.DarkMode}` : ''}
+            >
+              <div className={Styles.BookContainer}>
+                <Link to={`/books/rut-1`}>
+                  <div className={Styles.ImageContainer}>
+                    <div className={Styles.BookDescText}>
+                      <p>
+                        <span className={Styles.BGBlack}>
+                          Guru Gobind Singh - Pilot
+                        </span>
+                      </p>
+                      <p>~1675</p>
+                    </div>
+                    <img
+                      height={260}
+                      width="100%"
+                      loading="lazy"
+                      decoding="async"
+                      className={Styles.Cover}
+                      src="https://pbs.twimg.com/media/FwwRIo1acAAXeXk?format=jpg&name=small"
+                    />
+                    <div className={Styles.NewBadge}>
+                      <span className={Styles.Dot}></span>
+                      New
+                    </div>
+                  </div>
+                </Link>
+                <div className={Styles.BookInfo}>
+                  <p>
+                    The first <i>rut</i> unveils the dawn of Guru Gobind Singh
+                    Ji's saga, an epic tale of resilience, faith, and a quest to
+                    establish an enduring spiritual fortress. An opening
+                    chronicle in a hexalogy steeped in profound Sikh lore.
+                  </p>
+                  <Link to={`/books/rut-1`}>
+                    <button>Read Rut 1</button>
+                  </Link>
+                </div>
+              </div>
+            </Grid>
+
             {/* Raas 12 */}
             <Grid
               column={true}
@@ -57,10 +104,6 @@ const BookIndexScreen = () => {
                       className={Styles.Cover}
                       src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Mural_painting_of_Guru_Nanak_from_Gurdwara_Baba_Atal_Rai.jpg"
                     />
-                    <div className={Styles.NewBadge}>
-                      <span className={Styles.Dot}></span>
-                      New
-                    </div>
                   </div>
                 </Link>
                 <div className={Styles.BookInfo}>

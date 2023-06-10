@@ -10,21 +10,22 @@ import { Link } from 'react-router-dom';
 
 const ChapterInfoScreen = props => {
   const { id } = useParams();
-
   const [chapter, setChapter] = useState({
     number: 1,
-    title_gs: '',
-    title_translation: '',
-    title_transliteration_english: '',
-    description_english: '',
-    book_id: 2,
+    enTitle: '',
+    title: '',
+    enLongSummary: '',
+    bookId: 2,
+    artworkUrl: '',
   });
 
   const previousChaptersPath = bookId => {
     switch (bookId) {
       case 2:
         return '/books/rut-6';
-      case 3:
+      case 15:
+        return '/books/rut-1';
+      case 14:
         return '/books/raas-12';
       default:
         return '/books';
@@ -36,6 +37,7 @@ const ChapterInfoScreen = props => {
   useEffect(() => {
     const fetchChapter = async chapterId => {
       const res = await fetchGet(`/chapters/${chapterId}`);
+      debugger;
       setChapter(res.chapter);
     };
 
@@ -44,23 +46,20 @@ const ChapterInfoScreen = props => {
   return (
     <>
       <div className={Styles.Container}>
-        <DribbbleImageContainer
-          id={chapter.id}
-          imageUrl={chapter.artwork_url}
-        />
+        <DribbbleImageContainer id={chapter.id} imageUrl={chapter.artworkUrl} />
         <br />
         <ChapterInfo
           number={chapter.number}
-          gurmukhiScript={chapter.title_gs}
-          transliteration={chapter.content_transliteration_english}
-          translation={chapter.title_translation}
-          summary={chapter.description_english}
+          title={chapter.title}
+          enTitle={chapter.enTitle}
+          enLongSummary={chapter.enLongSummary}
         />
+
         <br />
 
         <Grid alignItems="center" justify="center">
           <Grid column={true} sm={12} md={8} lg={6}>
-            <Link to={previousChaptersPath(chapter.book_id)}>
+            <Link to={previousChaptersPath(chapter.bookId)}>
               <button
                 className={`${CornerButtonStyles.Orange} ${CornerButtonStyles.BottomLeft}`}
               >
