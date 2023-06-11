@@ -2,8 +2,8 @@
   "name": "shaheedi-spg",
   "version": "0.1.0",
   "private": true,
-  "engines" : { 
-    "node" : "16.16.0"
+  "engines": {
+    "node": "16.16.0"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
@@ -14,6 +14,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-jinke-music-player": "^4.19.1",
+    "react-player": "^2.12.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
     "web-vitals": "^0.2.4"
