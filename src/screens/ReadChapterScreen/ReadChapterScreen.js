@@ -41,8 +41,8 @@ const ReadChapterScreen = () => {
 
     const fetchKathaForChapter = async chapterId => {
       const res = await fetchGet(`/chapters/${chapterId}/kathas`);
-      setKathas(res.kathas);
       setIsPlaylist(res.kathas[0]?.isPlaylist);
+      setKathas(res.kathas);
     };
 
     fetchChapterContent(id);
