@@ -16,7 +16,7 @@ const ChapterInfo = props => {
       >
         <Grid column={true} sm={12} md={8} lg={6}>
           <p className={Styles.ChapterNumberEnglish}>Chapter {props.number}</p>
-          <h2 className={Styles.TitleEnglish}>{props.translation}</h2>
+          <h2 className={Styles.TitleEnglish}>{props.enTitle}</h2>
         </Grid>
       </Grid>
 
@@ -26,7 +26,7 @@ const ChapterInfo = props => {
         customClass={isDarkMode ? `${Styles.DarkMode}` : ''}
       >
         <Grid column={true} sm={12} md={8} lg={6}>
-          {props.summary.split('\n').map((paragraph, i) => (
+          {props?.enLongSummary?.split('\n')?.map((paragraph, i) => (
             <p key={i} className={Styles.Summary}>
               {paragraph}
             </p>

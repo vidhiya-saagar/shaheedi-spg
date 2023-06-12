@@ -46,22 +46,37 @@
 }
 
 
+.PauriTranslation {
+  font-family: 'Playfair Display', serif;
+  color: #DD715A;
+  font-weight: 500;
+}
+
 .Translation {
   font-family: 'Playfair Display', serif;
   color: #DD715A;
   font-weight: 500;
 }
 
-.DarkMode .Translation {
+
+.DarkMode .Translation, .DarkMode .PauriTranslation {
   color: #EFCF83;
 }
 
-.PauriContainer {
+.TukContainer {
   margin-bottom: 25px;
 }
 
+.TukContainer:last-child {
+  margin-bottom: 0;
+}
+
+.PauriContainer {
+  margin-bottom: 2em;
+}
+
 @media screen and (min-width: 64em) {
-  .PauriContainer:last-of-type {
+  .PauriContainer {
     margin-bottom: 5em;
   }
 }

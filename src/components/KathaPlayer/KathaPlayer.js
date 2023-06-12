@@ -8,9 +8,9 @@ const formatTracks = audioTracks => {
   return audioTracks.map(t => {
     return {
       name: t.title,
-      singer: gianis[t.giani_id].name,
-      cover: gianis[t.giani_id].artworks.web['1024'],
-      musicSrc: t.public_url,
+      singer: gianis[t.gianiId].name,
+      cover: gianis[t.gianiId].artworks.web['1024'],
+      musicSrc: t.publicUrl,
     };
   });
 };

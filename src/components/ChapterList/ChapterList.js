@@ -17,11 +17,10 @@ const ChapterList = ({ chapters }) => {
           >
             <ChapterItem
               id={chapter.id}
-              artwork={chapter.artwork_url}
+              artworkUrl={chapter.artworkUrl}
               number={chapter.number}
-              gurmukhiScript={chapter.title_gs}
-              gurmukhiUnicode={chapter.title_unicode}
-              translation={chapter.title_translation}
+              title={chapter.title}
+              enTitle={chapter.enTitle}
             />
           </Grid>
         );

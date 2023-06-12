@@ -4,7 +4,7 @@ import ChhandStyles from './ChhandStyles.module.css';
 import Pauri from '../../components/Pauri';
 import { Context as ThemeContext } from '../../context/ThemeContext';
 
-const Chhand = props => {
+const Chhand = chhandProps => {
   const { state: themeState } = useContext(ThemeContext);
   const isDarkMode = themeState.currentTheme === 'DARK';
   return (
@@ -12,16 +12,16 @@ const Chhand = props => {
     // Pauris
     // Tuks
     <div
-      key={props.id}
+      key={chhandProps.id}
       className={`${ChhandStyles.ChhandDiv} ${
         isDarkMode ? `${ChhandStyles.DarkMode}` : ''
       }`}
     >
       <h4 className={ChhandStyles.GurmukhiUnicodeChhandName}>
-        {props.chhand_type.chhand_name_unicode}
+        {chhandProps.name}
       </h4>
-      {props.pauris.map(pauri => (
-        <Pauri {...pauri} />
+      {chhandProps.pauris.map(pauri => (
+        <Pauri {...pauri} key={pauri.id} />
       ))}
     </div>
   );
