@@ -1,9 +1,9 @@
 import React from 'react';
 import Styles from './SoundcloudPlayer.module.css';
 
-const SoundcloudPlayer = ({ trackUrl }) => {
+const SoundcloudPlayer = ({ url }) => {
   const src = `https://w.soundcloud.com/player/?url=${encodeURIComponent(
-    trackUrl,
+    url,
   )}&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true&show_artwork=false`;
 
   return (

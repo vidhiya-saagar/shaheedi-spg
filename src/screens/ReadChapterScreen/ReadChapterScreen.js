@@ -17,8 +17,17 @@ const ReadChapterScreen = () => {
     enTitle: '',
     enLongSummary: '',
   });
+
   const [chhands, setChhands] = useState([]);
   const [kathas, setKathas] = useState([]);
+
+  /**
+   * Controls player type based on the 'is_playlist' field in 'kathas' table.
+   * - True: Renders `<SoundcloudPlayer url={linkToPlaylist} />`
+   * - False: Renders `<KathaPlayer audioTracks={arrayOfKathaObjects} />`
+   * Currently used only for 'Rut 1' (Book ID 15).
+   */
+  const [isPlaylist, setIsPlaylist] = useState(false);
 
   const { state: themeState } = useContext(ThemeContext);
   const isDarkMode = themeState.currentTheme === 'DARK';
@@ -33,6 +42,7 @@ const ReadChapterScreen = () => {
     const fetchKathaForChapter = async chapterId => {
       const res = await fetchGet(`/chapters/${chapterId}/kathas`);
       setKathas(res.kathas);
+      setIsPlaylist(res.kathas[0]?.isPlaylist);
     };
 
     fetchChapterContent(id);
@@ -98,15 +108,13 @@ const ReadChapterScreen = () => {
           </Grid>
         </Grid>
       </Grid>
-      {/* Soundcloud Player for Rut 1 Only - The Suraj Podcast */}
-      {/* Until there is a better way to have both, we will use this... */}
 
-      {/* if chapter.book === 15 show soundlcoud player */}
-      {chapter?.book?.id === 15 ? (
-        <SoundcloudPlayer />
-      ) : (
-        <KathaPlayer audioTracks={kathas} />
-      )}
+      {kathas.length > 0 &&
+        (isPlaylist ? (
+          <SoundcloudPlayer url={kathas[0].soundcloudUrl} />
+        ) : (
+          <KathaPlayer audioTracks={kathas} />
+        ))}
     </>
   );
 };
