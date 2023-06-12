@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import ReactPlayer from 'react-player/soundcloud';
+import React from 'react';
 import Styles from './SoundcloudPlayer.module.css';
 
-const SoundcloudPlayer = ({trackUrl="https://soundcloud.com/vidhiya-saagar/sets/rut-1-chapter-1"}) => {
-  const src = `https://w.soundcloud.com/player/?url=${encodeURIComponent(trackUrl)}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true&show_artwork=false`;
+const SoundcloudPlayer = ({ trackUrl }) => {
+  const src = `https://w.soundcloud.com/player/?url=${encodeURIComponent(
+    trackUrl,
+  )}&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true&show_artwork=false`;
 
   return (
     <div className={Styles.PlayerContainer}>
