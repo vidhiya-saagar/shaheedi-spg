@@ -17,6 +17,7 @@
 
 .GurmukhiUnicodeTuk {
   font-family: 'Sant Lipi';
+  font-weight: 500;
   color: #543828;
   font-size: 1.6em;
 }
@@ -48,14 +49,16 @@
 
 .PauriTranslation {
   font-family: 'Playfair Display', serif;
-  color: #DD715A;
+  color: #113264;
   font-weight: 500;
+  font-size: 1.2em;
 }
 
 .Translation {
   font-family: 'Playfair Display', serif;
-  color: #DD715A;
+  color: #113264;
   font-weight: 500;
+  font-size: 1.2em;
 }
 
 

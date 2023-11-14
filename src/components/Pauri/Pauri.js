@@ -33,6 +33,7 @@ const Pauri = ({ id, number, tuks, translation }) => {
             {tuk?.translation && (
               <p className={PauriStyles.Translation}>
                 {tuk.translation.enTranslation}
+                {tuks.length === tuk.sequence && <span> ||{number}||</span>}
               </p>
             )}
           </div>

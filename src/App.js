@@ -7,6 +7,7 @@ import ReadChapterScreen from './screens/ReadChapterScreen';
 import LandingScreen from './screens/LandingScreen';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Context as ThemeContext } from './context/ThemeContext';
+import 'sant-lipi';
 
 function App() {
   const { state: themeState } = useContext(ThemeContext);
