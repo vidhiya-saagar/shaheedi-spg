@@ -62,14 +62,14 @@ const ChapterInfoScreen = props => {
               <button
                 className={`${CornerButtonStyles.Orange} ${CornerButtonStyles.BottomLeft}`}
               >
-                &#60; Chapters
+                &#60; Other Chapters
               </button>
             </Link>
             <Link to={`/chapters/${id}/read`}>
               <button
                 className={`${CornerButtonStyles.Orange} ${CornerButtonStyles.BottomRight}`}
               >
-                Explore &#62;
+                Read Now &#62;
               </button>
             </Link>
           </Grid>
