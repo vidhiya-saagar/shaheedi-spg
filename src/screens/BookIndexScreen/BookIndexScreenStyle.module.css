@@ -3,11 +3,11 @@
   font-size: 24px;
   font-family: 'Playfair Display', serif;
   font-weight: 400;
-  color: #2D2D2F;
+  color: #2d2d2f;
 }
 
 .DarkMode .PageTitle {
-  color: #F7EBD4;
+  color: #f7ebd4;
 }
 
 .BookContainer {
@@ -20,15 +20,16 @@
   display: flex;
   justify-content: center;
   position: relative;
-  border: 1.5px solid #EFCf83;
+  border: 1.5px solid #efcf83;
 }
 
 .BookDescText {
   font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 32px;
   position: absolute;
-  color: #EEE5E9;
-  font-family: 'Cormorant Garamond', 'Georgia', 'Cambria', 'Times New Roman', serif;
+  color: #eee5e9;
+  font-family: 'Cormorant Garamond', 'Georgia', 'Cambria', 'Times New Roman',
+    serif;
   padding: 0.5em;
 }
 
@@ -42,11 +43,11 @@
 
 .BookInfo p {
   padding: 10px 0;
-  color: #2D2D2F;
+  color: #2d2d2f;
 }
 
 .DarkMode .BookInfo p {
-  color: #F7EBD4;
+  color: #f7ebd4;
 }
 
 .BGBlack {
@@ -69,7 +70,7 @@
 
 .NewBadge {
   color: #374151;
-  background: #E3B664;
+  background: #e3b664;
   position: absolute;
   /* This doesn't show up on Mobile properly  */
   right: -10px;
@@ -82,6 +83,7 @@
   justify-content: center;
   align-items: center;
   font-weight: 800;
+  font-size: 10px;
 }
 
 @media screen and (min-width: 40em) {
