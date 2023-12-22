@@ -32,6 +32,14 @@ const gianis = {
       },
     },
   },
+  6: {
+    name: 'Baba Jagjit Singh (Harkhowal Wale)',
+    artworks: {
+      web: {
+        1024: 'https://farm3.static.flickr.com/2532/4101681517_f5e2e73d23.jpg',
+      },
+    },
+  },
 };
 
 export default gianis;

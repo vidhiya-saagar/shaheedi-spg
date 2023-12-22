@@ -28,6 +28,53 @@ const BookIndexScreen = () => {
               <h3 className={Styles.PageTitle}>Books</h3>
             </Grid>
 
+            {/* Rut 6 */}
+            <Grid
+              column={true}
+              sm={12}
+              md={7}
+              lg={6}
+              customClass={isDarkMode ? `${Styles.DarkMode}` : ''}
+            >
+              <div className={Styles.BookContainer}>
+                <Link to={`/books/rut-6`}>
+                  <div className={Styles.ImageContainer}>
+                    <div className={Styles.BookDescText}>
+                      <p>
+                        <span className={Styles.BGBlack}>
+                          Shaheedi of the Sahibzade: The Battle of Chamkaur &
+                          Saka Sirhind
+                        </span>
+                      </p>
+                      <p>~1704</p>
+                    </div>
+                    <img
+                      height={260}
+                      width="100%"
+                      loading="lazy"
+                      decoding="async"
+                      className={Styles.Cover}
+                      src="https://cdn.discordapp.com/attachments/785696929664466964/791159814126436352/Untitled_Artwork.PNG"
+                    />
+                    <div className={Styles.NewBadge}>
+                      <span className={Styles.Dot}></span>
+                      Updated
+                    </div>
+                  </div>
+                </Link>
+                <div className={Styles.BookInfo}>
+                  <p>
+                    The six <i>ruts</i> - meaning seasons - are all centered
+                    around Guru Gobind Singh Ji. The Battle of Chamkaur can be
+                    found in the sixth Rut of the Suraj Prakash Granth.
+                  </p>
+                  <Link to={`/books/rut-6`}>
+                    <button>Read Rut 6</button>
+                  </Link>
+                </div>
+              </div>
+            </Grid>
+
             {/* Rut 1 */}
             <Grid
               column={true}
@@ -55,10 +102,10 @@ const BookIndexScreen = () => {
                       className={Styles.Cover}
                       src="https://pbs.twimg.com/media/FwwRIo1acAAXeXk?format=jpg&name=small"
                     />
-                    <div className={Styles.NewBadge}>
+                    {/* <div className={Styles.NewBadge}>
                       <span className={Styles.Dot}></span>
                       New
-                    </div>
+                    </div> */}
                   </div>
                 </Link>
                 <div className={Styles.BookInfo}>
@@ -163,48 +210,6 @@ const BookIndexScreen = () => {
                   </p>
                   <Link to={`/books/raas-12`}>
                     <button>Read Raas 12</button>
-                  </Link>
-                </div>
-              </div>
-            </Grid>
-
-            {/* Rut 6 */}
-            <Grid
-              column={true}
-              sm={12}
-              md={7}
-              lg={6}
-              customClass={isDarkMode ? `${Styles.DarkMode}` : ''}
-            >
-              <div className={Styles.BookContainer}>
-                <Link to={`/books/rut-6`}>
-                  <div className={Styles.ImageContainer}>
-                    <div className={Styles.BookDescText}>
-                      <p>
-                        <span className={Styles.BGBlack}>
-                          Guru Gobind Singh & The Greatest Battle
-                        </span>
-                      </p>
-                      <p>~1704</p>
-                    </div>
-                    <img
-                      height={260}
-                      width="100%"
-                      loading="lazy"
-                      decoding="async"
-                      className={Styles.Cover}
-                      src="https://cdn.discordapp.com/attachments/785696929664466964/791159814126436352/Untitled_Artwork.PNG"
-                    />
-                  </div>
-                </Link>
-                <div className={Styles.BookInfo}>
-                  <p>
-                    The six <i>ruts</i> - meaning seasons - are all centered
-                    around Guru Gobind Singh Ji. The Battle of Chamkaur can be
-                    found in the sixth Rut of the Suraj Prakash Granth.
-                  </p>
-                  <Link to={`/books/rut-6`}>
-                    <button>Read Rut 6</button>
                   </Link>
                 </div>
               </div>
